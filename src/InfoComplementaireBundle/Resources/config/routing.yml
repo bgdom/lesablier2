@@ -1,0 +1,3 @@
+info_complementaire_homepage:
+    path:     /
+    defaults: { _controller: InfoComplementaireBundle:Default:index }

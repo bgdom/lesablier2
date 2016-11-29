@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+Connexion
+{% endblock %}
+{% block stylesheets %}
+	{{ parent () }}
+	<link rel="stylesheet" href="{{ asset('css/styleConnexion.css') }}" rel="stylesheet">
+{% endblock%}
+{% block mid %}		
+		<section>
+				<!-- === BEGIN CONTENT === -->
+            <div id="content">
+				{% if app.request.hasPreviousSession %}
+					{% for erreurMsg in  app.session.flashBag.get('erreur') %}
+					<div class="padding-top-30 container background-white" id="errorMess">
+						<p>{{ erreurMsg }}</p>
+					</div>
+					{% endfor %}
+				{% endif %}
+				<div class="container background-white">                
+                    <div class="row margin-vert-30">
+                        <!-- Register Box -->
+                        <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                            <form method="post" action="{{ path('inscription_indexpage', {'verif' : 1}) }}" class="signup-page">
+                                <div class="signup-header">
+                                    <h2>Creer un nouveau compte</h2>
+                                    <p>Déjà membre? Clique 
+                                        <a href="{{ path('inscription_indexpage') }}">ICI </a>pour te connecter à ton compte</p>
+                                </div>
+                                <label>Nom</label>
+                                <input class="form-control margin-bottom-20" name="nom" maxlength="30" type="text">
+                                <label>Prenom</label>
+                                <input class="form-control margin-bottom-20" name="prenom" maxlength="30" type="text">
+                                <label>Adresse Email
+                                    <span class="color-red">*</span>
+                                </label>
+                                <input name="email" maxlength="50" class="form-control margin-bottom-20" type="text">
+								<label>Age</label>
+                                <input class="form-control margin-bottom-20" name="age" maxlength="30" type="number">
+                                <div class="form-control margin-bottom-20"><input type="radio" placeholder="M" name="sexe" value="M">M     
+								<input type="radio" placeholder="F" name="sexe" value="F">F</div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <label class="checkbox">
+                                            <input type="checkbox">J'ai lu et j'accepte
+                                            <a href="http://top-citations-proverbes.com/wp-content/uploads/2015/08/Citation_courte__Le_Plus_grand_mensonge_de_lhistoire_%E2%80%A6_Jai_lu_et_jaccepte_les_conditions_dutil_02251-593x593.jpg">les conditions d'utilisations.</a>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-4 text-right">
+                                        <button class="btn btn-primary" type="submit">Inscription</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- End Register Box -->
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+		</section>
+{% endblock %}
