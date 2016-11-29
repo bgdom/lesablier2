@@ -1,0 +1,12 @@
+authentification_homepage:
+    path:     /
+    defaults: { _controller: AuthentificationBundle:Default:index}
+connexion_indexpage:
+    path:     /connexion
+    defaults: { _controller: AuthentificationBundle:Connexion:index}
+inscription_indexpage:
+    path:     /inscription
+    defaults: { _controller: AuthentificationBundle:Inscription:index}
+deconnexion_indexpage:
+    path:     /deconnexion
+    defaults: { _controller: AuthentificationBundle:Deconnexion:index}
