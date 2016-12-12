@@ -1,8 +1,0 @@
-info_complementaire:
-    resource: "@InfoComplementaireBundle/Resources/config/routing.yml"
-    prefix:   /
-
-authentification:
-    resource: "@AuthentificationBundle/Resources/config/routing.yml"
-    prefix:   /
-
