@@ -1,0 +1,12 @@
+authentification:
+    resource: "@AuthentificationBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+info_complementaire:
+    resource: "@InfoComplementaireBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+reservation:
+    resource: "@ReservationBundle/Resources/config/routing.yml"
+    prefix:   /
+

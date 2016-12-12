@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+Contact
+{% endblock %}
+{% block mid %}	
+<div id="content">
+                <div class="container background-white">
+                    <div class="row margin-vert-30">
+                        <!-- Main Column -->
+                        <div class="col-md-9">
+                            <!-- Main Content -->
+                            <div class="headline">
+                                <h2>Formulaire de contact</h2>
+                            </div>
+                            <p></p>
+                            <br>
+                            <!-- Contact Form -->
+                            <form>
+                                <label>Nom</label>
+                                <div class="row margin-bottom-20">
+                                    <div class="col-md-6 col-md-offset-0">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <label>Email
+                                    <span class="color-red">*</span>
+                                </label>
+                                <div class="row margin-bottom-20">
+                                    <div class="col-md-6 col-md-offset-0">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <label>Message</label>
+                                <div class="row margin-bottom-20">
+                                    <div class="col-md-8 col-md-offset-0">
+                                        <textarea rows="8" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                                </p>
+                            </form>
+                            <!-- End Contact Form -->
+                            <!-- End Main Content -->
+                        </div>
+                        <!-- End Main Column -->
+                        <!-- Side Column -->
+                        <div class="col-md-3">
+                            <!-- Recent Posts -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Informations</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Il peu y avoir quelques interférences. Ainsi, si vous recevez des caractères non identifiés, c'est qu'ils viennent du futur. Si vous recevez des hieroglyphes, c'est que nous sommes dans le passé. Ne soyez pas surpris.</p>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa-phone color-primary"></i>+33 6 66 66 66 66</li>
+                                        <li>
+                                            <i class="fa-envelope color-primary"></i>info@sablier.com</li>
+                                        <li style="	overflow:hidden; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                            <i class="fa-home color-primary"></i>{{ url('authentification_homepage') }}</li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <strong class="color-primary">Lundi - Vendredi:</strong> 9:00 à 6:00</li>
+                                        <li>
+                                            <strong class="color-primary">Samedi:</strong> 10:00 à 3:00</li>
+                                        <li>
+                                            <strong class="color-primary">Dimanche:</strong> Fermé</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End recent Posts -->
+                            <!-- About -->
+                            
+                            <!-- End About -->
+                        </div>
+                        <!-- End Side Column -->
+                    </div>
+                </div>
+            </div>
+{% endblock %}

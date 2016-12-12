@@ -1,0 +1,6 @@
+info_complementaire_homepage:
+    path:     /nous
+    defaults: { _controller: InfoComplementaireBundle:Nous:index }
+info_contact_homepage:
+    path:     /contact
+    defaults: { _controller: InfoComplementaireBundle:Contact:index }
