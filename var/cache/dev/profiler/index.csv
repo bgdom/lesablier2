@@ -383,3 +383,9 @@ ea2235,::1,GET,http://localhost/lesablier2/web/app_dev.php/espace-perso,14824097
 c486ec,::1,GET,http://localhost/lesablier2/web/app_dev.php/,1482409824,,200
 00d039,::1,GET,http://localhost/lesablier2/web/app_dev.php/sounds/sound6.ogg,1482409825,b9097e,200
 b9097e,::1,GET,http://localhost/lesablier2/web/app_dev.php/sounds/sound6.ogg,1482409825,,404
+1db4d3,::1,GET,http://localhost/lesablier2/web/app_dev.php/,1482410846,,200
+317736,::1,GET,http://localhost/lesablier2/web/app_dev.php/connexion,1482410860,,200
+5c6cfc,::1,POST,http://localhost/lesablier2/web/app_dev.php/connexion?verif=1,1482410867,,302
+fb4785,::1,GET,http://localhost/lesablier2/web/app_dev.php/,1482410867,,200
+37101f,::1,GET,http://localhost/lesablier2/web/app_dev.php/sounds/sound6.ogg,1482410869,5bc47d,200
+5bc47d,::1,GET,http://localhost/lesablier2/web/app_dev.php/sounds/sound6.ogg,1482410869,,404
