@@ -83,7 +83,7 @@
 								{% if app.request.hasPreviousSession %}
 									{% if app.session.get('IdUtilisateur', false) %}
 								<li>
-                                    <a href="./espace_perso.php" class="fa-copy">espace personnel</a>
+                                    <a href="{{path('info_espace_perso_homepage') }}" class="fa-copy">espace personnel</a>
                                 </li>
 									{% endif %}
 								{% endif %}

@@ -8,6 +8,6 @@ class NousController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('nous.html.twig');
+        return $this->render('InfoComplementaire\nous.html.twig');
     }
 }

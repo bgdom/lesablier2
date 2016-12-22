@@ -8,6 +8,6 @@ class ContactController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('contact.html.twig');
+        return $this->render('InfoComplementaire\contact.html.twig');
     }
 }

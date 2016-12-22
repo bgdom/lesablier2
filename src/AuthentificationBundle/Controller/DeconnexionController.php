@@ -10,7 +10,7 @@ class DeconnexionController extends Controller
     public function indexAction(Request $request)
     {
 		$request->getSession()->clear();
-		$this->addFlash('warning','Vous êtes déconnecté');
+		$this->addFlash('notice','Vous êtes déconnecté');
         return $this->redirectToRoute('authentification_homepage');
     }
 }

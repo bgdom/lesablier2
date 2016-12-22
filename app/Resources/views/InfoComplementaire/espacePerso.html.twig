@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Espace Personnel
+{% endblock %}
+
+{% block mid %}
+<!-- === BEGIN CONTENT === -->
+            <div id="content">
+                <div class="container background-white">
+                    <div class="row margin-vert-30">
+                        <div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6 animate fadeIn">
+									<img src="{{ asset('images/portfolio/image0')}}.jpeg">
+								</div>
+								<div class="col-md-6 margin-bottom-10 ">
+									<h1 class="padding-top-10 pull-left">Mes informations personnelles</h1>
+									<div class="clearfix"></div>
+									<div class="animate fadeInRight">
+									<p><h3>{{utilisateur.nom}}</h3>
+									<p><h3>{{utilisateur.prenom}}</h3></p>
+									<p><h3>{{utilisateur.email}}</h3></p>
+									</div>
+								</div>
+							</div>
+						    <hr>
+							<div class="row">
+								<div class="col-md-6 margin-bottom-10 ">
+									<h1 class="padding-top-10 pull-left">Mes Réservations
+									<small>(voyages)</small>
+                                    </h1>
+								</div>
+								<div class="col-md-12 portfolio-group no-padding">
+								<!-- Portfolio Item -->
+                                {% if not destinations is null %}
+    								{% for destination in destinations %}
+    								<div class="col-md-6 portfolio-item margin-bottom-40 animate fadeInLeft">
+    									<div>
+    										<a href="#">
+    											<figure>
+    												<img src="{{asset('images/portfolio/image')}}{{destination.id}}.jpg" alt="{{destination.id}}">
+    												<figcaption>
+    													<h3 class="margin-top-20">{{destination.pays}} {{destination.ville}} {{ destination.dateHist.format('d') }}-{{ destination.dateHist.format('m') }}-{{ destination.dateHist.format('Y') }}</h3>
+                                                        <h3><em>{{destination.titre}}</em></h3>
+                                                        <span>{{destination.qtePers}} place(s) pour le {{ destination.dateCom.format('d') }}-{{ destination.dateCom.format('m') }}-{{ destination.dateCom.format('Y') }} à {{ destination.heureCom.format('h')}}H{{ destination.heureCom.format('i')}}</span>
+    												</figcaption>
+    											</figure>
+    										</a>
+    									</div>
+    								</div>
+    								<!-- End Portfolio Item -->
+    								{% endfor %}
+                                {% else %}
+                                    <h4><em>Aucunes</em></h4>
+                                {% endif %}
+								</div>
+							</div>
+						    <hr>
+                            <!-- End Accordion -->
+                        </div>
+						<h1 class="text-right padding-top-10 pull-right">Mes Avis</h1>
+						<?php
+						foreach($avis As $avi){
+						?>
+                        <!-- Main Text -->
+                        <div class="col-md-12 login-page margin-bottom-40">
+                            <h2 class="text-left"><?php echo $avi['Lieu'] .' - '. $avi['DateHist'];?></h2>
+                            <p class="text-left"><em><?php echo htmlspecialchars($avi['Contenu']); ?></em></p>
+                        </div>
+                        <!-- End Main Text -->
+						<?php
+						}
+						?>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+{% endblock %}

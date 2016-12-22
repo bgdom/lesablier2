@@ -22,7 +22,7 @@ class InscriptionController extends Controller
 			return $this->redirectToRoute('authentification_homepage');
 		}
     }
-	
+
 	private function verificationAction(Request &$request, &$session)
 	{
         $posts = $request->request;
@@ -32,21 +32,29 @@ class InscriptionController extends Controller
 		$age = (int) $age = $posts->get('age');
 		$sexe = $posts->get('sexe');
 		if(isset($nom,$prenom,$email,$age,$sexe) && strlen($nom) > 0 && strlen($nom) <= 30 && strlen($prenom) > 0 && strlen($prenom) <= 30 && strlen($email) > 0 && strlen($email) <= 50 && 	$age > 0 && strlen($sexe) == 1 && (strtoupper($sexe) == 'M' ||  strtoupper($sexe) == 'F')){
-			$user = new Utilisateur();
-			$user->setNom(strtolower($nom));
-			$user->setPrenom(strtolower($prenom));
-			$user->setEmail(strtolower($email));
-			$user->setAge($age);
-			$user->setSexe(strtolower($sexe));
-			
-			$em = $this->getDoctrine()->getManager();
-			$em->persist($user);
-			$em->flush();
-			
-			$this->addFlash('notice','Vous êtes inscrit, connectez vous maintenant');
-			return true;
+            $repo = $this->getDoctrine()->getRepository('AuthentificationBundle:Utilisateur');
+            $utilisateur = $repo->findOneBy(array(
+                'nom' => $nom,
+                'email' => $email
+            ));
+            if(!$utilisateur){
+                $user = new Utilisateur();
+    			$user->setNom(strtolower($nom));
+    			$user->setPrenom(strtolower($prenom));
+    			$user->setEmail(strtolower($email));
+    			$user->setAge($age);
+    			$user->setSexe(strtolower($sexe));
+
+    			$em = $this->getDoctrine()->getManager();
+    			$em->persist($user);
+    			$em->flush();
+
+    			$this->addFlash('notice','Vous êtes inscrit, connectez vous maintenant');
+    			return true;
+            }else
+                $this->addFlash('error','Un utilisateur avec cet Email et Nom existe déjà, veuillez les changer');
 		}else
-			$this->addFlash('erreur','Une erreur est survenu avec vos informations, veuillez réessayer');
+			$this->addFlash('error','Une erreur est survenu avec vos informations, veuillez réessayer');
 		return false;
     }
 }

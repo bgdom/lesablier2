@@ -44,9 +44,9 @@ class ConnexionController extends Controller
 					$this->addFlash('notice','Vous êtes connecté');
 					return true;
 				}else
-					$this->addFlash('erreur','Pas d\'utilisateurs correspondant.');
+					$this->addFlash('error','Pas d\'utilisateurs correspondant.');
 			}else
-					$this->addFlash('erreur','Une erreur est survenue lors de la connexion, veuillez vérifier vos informations.');
+					$this->addFlash('error','Une erreur est survenue lors de la connexion, veuillez vérifier vos informations.');
 		}
 		return false;
     }
