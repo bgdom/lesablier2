@@ -96,7 +96,7 @@ Accueil
                             <ul class="portfolio-group">
 								<!-- Portfolio Item -->
                                 <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                               
+
                                         <figure class="animate fadeInLeft">
                                             <img alt="image1" src="{{ asset('images/frontpage/image1.jpg') }}">
                                             <figcaption>
@@ -104,12 +104,12 @@ Accueil
                                                 <span>Qui n'a jamais rêvé de voir un dinosaure de ses propres yeux ? </span>
                                             </figcaption>
                                         </figure>
-                               
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                            
+
                                         <figure class="animate fadeInRight">
                                             <img alt="image2" src="{{ asset('images/frontpage/image2.jpg') }}">
                                             <figcaption>
@@ -117,12 +117,12 @@ Accueil
                                                 <span>Visitez les pyramides et rencontrez les pharaons ailleurs que dans leurs tombeaux! </span>
                                             </figcaption>
                                         </figure>
-                        
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                   
+
                                         <figure class="animate fadeInLeft">
                                             <img alt="image3" src="{{ asset('images/frontpage/image3.jpg') }}">
                                             <figcaption>
@@ -130,12 +130,12 @@ Accueil
                                                 <span>Rencontrer un roi ou une reine et devenir un chevalier est une occasion unique qu'on ne peut vivre qu'avec Le Sablier!</span>
                                             </figcaption>
                                         </figure>
-                                 
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                 
+
                                         <figure class="animate fadeInRight">
                                             <img alt="image4" src="{{ asset('images/frontpage/image4.jpg') }}">
                                             <figcaption>
@@ -143,12 +143,12 @@ Accueil
                                                 <span>Decouvrez les plus grands esprits du monde comme Leonard de Vinci ou Galilée et leurs decouvertes! </span>
                                             </figcaption>
                                         </figure>
-                                  
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                                   
+
                                         <figure class="animate fadeInLeft">
                                             <img alt="image5" src="{{ asset('images/frontpage/image5.jpg') }}">
                                             <figcaption>
@@ -156,12 +156,12 @@ Accueil
                                                 <span>Vous mourrez d'envie de voir l'evolution technologique sans précédent que connaitra la civilisation humaine? Allez 100 ans en avant! </span>
                                             </figcaption>
                                         </figure>
-                                
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class="portfolio-item col-sm-6 col-xs-6 padding-20">
-                              
+
                                         <figure class="animate fadeInRight">
                                             <img alt="image6" src="{{ asset('images/frontpage/image6.jpg') }}">
                                             <figcaption>
@@ -169,7 +169,7 @@ Accueil
                                                 <span>Mystère mystère...</span>
                                             </figcaption>
                                         </figure>
-                       
+
                                 </li>
                             </ul>
                             <!-- End Portfolio -->
@@ -181,21 +181,20 @@ Accueil
 				<div class="container background-white">
                     <div class="row margin-vert-30">
 						<h1 class="text-center">Quelques avis...</h1>
-						<?php
-						foreach($randomAvis As $avis){
-						?>
-                        <!-- Main Text -->
-                        <div class="col-md-12 login-page margin-bottom-40">
-                            <h2 class="text-left"><?php echo htmlspecialchars($avis['Nom']) . ' - '. $avis['Lieu'] .'</br>'?></h2>
-                            <p class="text-left"><?php echo $avis['DateHist'] . '</br>'?></p>
-                            <p class="text-left"><em><?php echo htmlspecialchars($avis['Contenu']) ?></em></p>
-                        </div>
-                        <!-- End Main Text -->
-						<?php
-						}
-						?>
+						{% if avis is null%}
+                            <div class="col-md-12 login-page margin-bottom-40">
+                                <h2 class="text-left">Aucuns</h2>
+                            </div>
+                        {% else %}
+                            {% for avi in avis %}
+                                <div class="col-md-12 login-page margin-bottom-40">
+                                    <h2 class="text-left">{{avi.prenom}} - {{avi.titre}}</br></h2>
+                                    <p class="text-left">{{avi.dateHist.format('d') }}/{{ avi.dateHist.format('m') }}/{{ avi.dateHist.format('Y') }}</br></p>
+                                    <p class="text-left"><em>{{avi.contenu}}</em></p>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
 {% endblock %}
-

@@ -22,34 +22,34 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f20523f5936344fc2f509fbaecd78b262f929f0ccae5bee11f149767ce01ba88 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f20523f5936344fc2f509fbaecd78b262f929f0ccae5bee11f149767ce01ba88->enter($__internal_f20523f5936344fc2f509fbaecd78b262f929f0ccae5bee11f149767ce01ba88_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd->enter($__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f20523f5936344fc2f509fbaecd78b262f929f0ccae5bee11f149767ce01ba88->leave($__internal_f20523f5936344fc2f509fbaecd78b262f929f0ccae5bee11f149767ce01ba88_prof);
+        $__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd->leave($__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_78d801eaf7e163cd8351cc814ab50e609b659d083ef47c493467458fda39b6b8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_78d801eaf7e163cd8351cc814ab50e609b659d083ef47c493467458fda39b6b8->enter($__internal_78d801eaf7e163cd8351cc814ab50e609b659d083ef47c493467458fda39b6b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080->enter($__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "Accueil
 ";
         
-        $__internal_78d801eaf7e163cd8351cc814ab50e609b659d083ef47c493467458fda39b6b8->leave($__internal_78d801eaf7e163cd8351cc814ab50e609b659d083ef47c493467458fda39b6b8_prof);
+        $__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080->leave($__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080_prof);
 
     }
 
     // line 5
     public function block_mid($context, array $blocks = array())
     {
-        $__internal_ab50793a22f7d757d1a7a828cc7644566c210443aa8e112a536fe3f39f6377e2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ab50793a22f7d757d1a7a828cc7644566c210443aa8e112a536fe3f39f6377e2->enter($__internal_ab50793a22f7d757d1a7a828cc7644566c210443aa8e112a536fe3f39f6377e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
+        $__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e->enter($__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
 
         // line 6
         echo "    <div id=\"content\">
@@ -157,7 +157,7 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                             <ul class=\"portfolio-group\">
 \t\t\t\t\t\t\t\t<!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                               
+
                                         <figure class=\"animate fadeInLeft\">
                                             <img alt=\"image1\" src=\"";
         // line 101
@@ -168,12 +168,12 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                                 <span>Qui n'a jamais rêvé de voir un dinosaure de ses propres yeux ? </span>
                                             </figcaption>
                                         </figure>
-                               
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                            
+
                                         <figure class=\"animate fadeInRight\">
                                             <img alt=\"image2\" src=\"";
         // line 114
@@ -184,12 +184,12 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                                 <span>Visitez les pyramides et rencontrez les pharaons ailleurs que dans leurs tombeaux! </span>
                                             </figcaption>
                                         </figure>
-                        
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                                   
+
                                         <figure class=\"animate fadeInLeft\">
                                             <img alt=\"image3\" src=\"";
         // line 127
@@ -200,12 +200,12 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                                 <span>Rencontrer un roi ou une reine et devenir un chevalier est une occasion unique qu'on ne peut vivre qu'avec Le Sablier!</span>
                                             </figcaption>
                                         </figure>
-                                 
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                                 
+
                                         <figure class=\"animate fadeInRight\">
                                             <img alt=\"image4\" src=\"";
         // line 140
@@ -216,12 +216,12 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                                 <span>Decouvrez les plus grands esprits du monde comme Leonard de Vinci ou Galilée et leurs decouvertes! </span>
                                             </figcaption>
                                         </figure>
-                                  
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                                   
+
                                         <figure class=\"animate fadeInLeft\">
                                             <img alt=\"image5\" src=\"";
         // line 153
@@ -232,12 +232,12 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                                 <span>Vous mourrez d'envie de voir l'evolution technologique sans précédent que connaitra la civilisation humaine? Allez 100 ans en avant! </span>
                                             </figcaption>
                                         </figure>
-                                
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                              
+
                                         <figure class=\"animate fadeInRight\">
                                             <img alt=\"image6\" src=\"";
         // line 166
@@ -248,7 +248,7 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                                 <span>Mystère mystère...</span>
                                             </figcaption>
                                         </figure>
-                       
+
                                 </li>
                             </ul>
                             <!-- End Portfolio -->
@@ -260,25 +260,56 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
 \t\t\t\t<div class=\"container background-white\">
                     <div class=\"row margin-vert-30\">
 \t\t\t\t\t\t<h1 class=\"text-center\">Quelques avis...</h1>
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\tforeach(\$randomAvis As \$avis){
-\t\t\t\t\t\t?>
-                        <!-- Main Text -->
-                        <div class=\"col-md-12 login-page margin-bottom-40\">
-                            <h2 class=\"text-left\"><?php echo htmlspecialchars(\$avis['Nom']) . ' - '. \$avis['Lieu'] .'</br>'?></h2>
-                            <p class=\"text-left\"><?php echo \$avis['DateHist'] . '</br>'?></p>
-                            <p class=\"text-left\"><em><?php echo htmlspecialchars(\$avis['Contenu']) ?></em></p>
-                        </div>
-                        <!-- End Main Text -->
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\t}
-\t\t\t\t\t\t?>
-                    </div>
+\t\t\t\t\t\t";
+        // line 184
+        if ((null === (isset($context["avis"]) ? $context["avis"] : $this->getContext($context, "avis")))) {
+            // line 185
+            echo "                            <div class=\"col-md-12 login-page margin-bottom-40\">
+                                <h2 class=\"text-left\">Aucuns</h2>
+                            </div>
+                        ";
+        } else {
+            // line 189
+            echo "                            ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["avis"]) ? $context["avis"] : $this->getContext($context, "avis")));
+            foreach ($context['_seq'] as $context["_key"] => $context["avi"]) {
+                // line 190
+                echo "                                <div class=\"col-md-12 login-page margin-bottom-40\">
+                                    <h2 class=\"text-left\">";
+                // line 191
+                echo twig_escape_filter($this->env, $this->getAttribute($context["avi"], "prenom", array()), "html", null, true);
+                echo " - ";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["avi"], "titre", array()), "html", null, true);
+                echo "</br></h2>
+                                    <p class=\"text-left\">";
+                // line 192
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["avi"], "dateHist", array()), "format", array(0 => "d"), "method"), "html", null, true);
+                echo "/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["avi"], "dateHist", array()), "format", array(0 => "m"), "method"), "html", null, true);
+                echo "/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["avi"], "dateHist", array()), "format", array(0 => "Y"), "method"), "html", null, true);
+                echo "</br></p>
+                                    <p class=\"text-left\"><em>";
+                // line 193
+                echo twig_escape_filter($this->env, $this->getAttribute($context["avi"], "contenu", array()), "html", null, true);
+                echo "</em></p>
+                                </div>
+                            ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['avi'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 196
+            echo "                        ";
+        }
+        // line 197
+        echo "                    </div>
                 </div>
             </div>
 ";
         
-        $__internal_ab50793a22f7d757d1a7a828cc7644566c210443aa8e112a536fe3f39f6377e2->leave($__internal_ab50793a22f7d757d1a7a828cc7644566c210443aa8e112a536fe3f39f6377e2_prof);
+        $__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e->leave($__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e_prof);
 
     }
 
@@ -294,7 +325,7 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
 
     public function getDebugInfo()
     {
-        return array (  244 => 166,  228 => 153,  212 => 140,  196 => 127,  180 => 114,  164 => 101,  92 => 32,  86 => 29,  80 => 26,  74 => 23,  55 => 6,  49 => 5,  41 => 3,  35 => 2,  11 => 1,);
+        return array (  307 => 197,  304 => 196,  295 => 193,  287 => 192,  281 => 191,  278 => 190,  273 => 189,  267 => 185,  265 => 184,  244 => 166,  228 => 153,  212 => 140,  196 => 127,  180 => 114,  164 => 101,  92 => 32,  86 => 29,  80 => 26,  74 => 23,  55 => 6,  49 => 5,  41 => 3,  35 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -405,7 +436,7 @@ Accueil
                             <ul class=\"portfolio-group\">
 \t\t\t\t\t\t\t\t<!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                               
+
                                         <figure class=\"animate fadeInLeft\">
                                             <img alt=\"image1\" src=\"{{ asset('images/frontpage/image1.jpg') }}\">
                                             <figcaption>
@@ -413,12 +444,12 @@ Accueil
                                                 <span>Qui n'a jamais rêvé de voir un dinosaure de ses propres yeux ? </span>
                                             </figcaption>
                                         </figure>
-                               
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                            
+
                                         <figure class=\"animate fadeInRight\">
                                             <img alt=\"image2\" src=\"{{ asset('images/frontpage/image2.jpg') }}\">
                                             <figcaption>
@@ -426,12 +457,12 @@ Accueil
                                                 <span>Visitez les pyramides et rencontrez les pharaons ailleurs que dans leurs tombeaux! </span>
                                             </figcaption>
                                         </figure>
-                        
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                                   
+
                                         <figure class=\"animate fadeInLeft\">
                                             <img alt=\"image3\" src=\"{{ asset('images/frontpage/image3.jpg') }}\">
                                             <figcaption>
@@ -439,12 +470,12 @@ Accueil
                                                 <span>Rencontrer un roi ou une reine et devenir un chevalier est une occasion unique qu'on ne peut vivre qu'avec Le Sablier!</span>
                                             </figcaption>
                                         </figure>
-                                 
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                                 
+
                                         <figure class=\"animate fadeInRight\">
                                             <img alt=\"image4\" src=\"{{ asset('images/frontpage/image4.jpg') }}\">
                                             <figcaption>
@@ -452,12 +483,12 @@ Accueil
                                                 <span>Decouvrez les plus grands esprits du monde comme Leonard de Vinci ou Galilée et leurs decouvertes! </span>
                                             </figcaption>
                                         </figure>
-                                  
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                                   
+
                                         <figure class=\"animate fadeInLeft\">
                                             <img alt=\"image5\" src=\"{{ asset('images/frontpage/image5.jpg') }}\">
                                             <figcaption>
@@ -465,12 +496,12 @@ Accueil
                                                 <span>Vous mourrez d'envie de voir l'evolution technologique sans précédent que connaitra la civilisation humaine? Allez 100 ans en avant! </span>
                                             </figcaption>
                                         </figure>
-                                
+
                                 </li>
                                 <!-- //Portfolio Item// -->
                                 <!-- Portfolio Item -->
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
-                              
+
                                         <figure class=\"animate fadeInRight\">
                                             <img alt=\"image6\" src=\"{{ asset('images/frontpage/image6.jpg') }}\">
                                             <figcaption>
@@ -478,7 +509,7 @@ Accueil
                                                 <span>Mystère mystère...</span>
                                             </figcaption>
                                         </figure>
-                       
+
                                 </li>
                             </ul>
                             <!-- End Portfolio -->
@@ -490,24 +521,23 @@ Accueil
 \t\t\t\t<div class=\"container background-white\">
                     <div class=\"row margin-vert-30\">
 \t\t\t\t\t\t<h1 class=\"text-center\">Quelques avis...</h1>
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\tforeach(\$randomAvis As \$avis){
-\t\t\t\t\t\t?>
-                        <!-- Main Text -->
-                        <div class=\"col-md-12 login-page margin-bottom-40\">
-                            <h2 class=\"text-left\"><?php echo htmlspecialchars(\$avis['Nom']) . ' - '. \$avis['Lieu'] .'</br>'?></h2>
-                            <p class=\"text-left\"><?php echo \$avis['DateHist'] . '</br>'?></p>
-                            <p class=\"text-left\"><em><?php echo htmlspecialchars(\$avis['Contenu']) ?></em></p>
-                        </div>
-                        <!-- End Main Text -->
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\t}
-\t\t\t\t\t\t?>
+\t\t\t\t\t\t{% if avis is null%}
+                            <div class=\"col-md-12 login-page margin-bottom-40\">
+                                <h2 class=\"text-left\">Aucuns</h2>
+                            </div>
+                        {% else %}
+                            {% for avi in avis %}
+                                <div class=\"col-md-12 login-page margin-bottom-40\">
+                                    <h2 class=\"text-left\">{{avi.prenom}} - {{avi.titre}}</br></h2>
+                                    <p class=\"text-left\">{{avi.dateHist.format('d') }}/{{ avi.dateHist.format('m') }}/{{ avi.dateHist.format('Y') }}</br></p>
+                                    <p class=\"text-left\"><em>{{avi.contenu}}</em></p>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
 {% endblock %}
-
 ", "default/index.html.twig", "C:\\wamp64\\www\\lesablier2\\app\\Resources\\views\\default\\index.html.twig");
     }
 }

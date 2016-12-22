@@ -64,10 +64,8 @@ Espace Personnel
                         {% if not avis is null %}
     						{% for avi in avis %}
                                 <!-- Main Text -->
-
                                     <h2 class="text-left">{{avi.titre}} - {{ avi.dateHist.format('d') }}/{{ avi.dateHist.format('m') }}/{{ avi.dateHist.format('Y') }}</h2>
                                     <p class="text-left">{{avi.contenu}}</em></p>
-
                                 <!-- End Main Text -->
     						{% endfor %}
                         {% else %}
