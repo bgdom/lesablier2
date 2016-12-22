@@ -3,6 +3,7 @@
 namespace AuthentificationBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Utilisateur
@@ -17,9 +18,15 @@ class Utilisateur
     */
     private $commandes;
 
+    /**
+    * @ORM\OneToMany(targetEntity="ReservationBundle\Entity\Avis", mappedBy="idUtilisateur")
+    */
+    private $avis;
+
     public function __construct()
     {
-      $this->commandes= new ArrayCollection();
+        $this->avis = new ArrayCollection();
+        $this->commandes= new ArrayCollection();
     }
     /**
      * @var int
@@ -206,7 +213,7 @@ class Utilisateur
     public function addCommande(\ReservationBundle\Entity\Commande $commande)
     {
         $this->commandes[] = $commande;
-    
+
         return $this;
     }
 

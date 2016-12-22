@@ -3,6 +3,7 @@
 namespace ReservationBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Destination
@@ -18,9 +19,15 @@ class Destination
     */
     private $commandes;
 
+    /**
+    * @ORM\OneToMany(targetEntity="Avis", mappedBy="idDestination")
+    */
+    private $avis;
+
     public function __construct()
     {
-      $this->commandes= new ArrayCollection();
+      $this->avis = new ArrayCollection();
+      $this->commandes = new ArrayCollection();
     }
     /**
      * @var int
@@ -214,7 +221,7 @@ class Destination
     public function setInitial($initial)
     {
         $this->initial = $initial;
-    
+
         return $this;
     }
 
@@ -238,7 +245,7 @@ class Destination
     public function addCommande(\ReservationBundle\Entity\Commande $commande)
     {
         $this->commandes[] = $commande;
-    
+
         return $this;
     }
 
@@ -260,5 +267,39 @@ class Destination
     public function getCommandes()
     {
         return $this->commandes;
+    }
+
+    /**
+     * Add avi
+     *
+     * @param \ReservationBundle\Entity\Avis $avi
+     *
+     * @return Destination
+     */
+    public function addAvi(\ReservationBundle\Entity\Avis $avi)
+    {
+        $this->avis[] = $avi;
+
+        return $this;
+    }
+
+    /**
+     * Remove avi
+     *
+     * @param \ReservationBundle\Entity\Avis $avi
+     */
+    public function removeAvi(\ReservationBundle\Entity\Avis $avi)
+    {
+        $this->avis->removeElement($avi);
+    }
+
+    /**
+     * Get avis
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAvis()
+    {
+        return $this->avis;
     }
 }
