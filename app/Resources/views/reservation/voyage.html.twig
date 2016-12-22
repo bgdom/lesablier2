@@ -1,46 +1,102 @@
 {% extends 'base.html.twig' %}
+
 {% block title %}
-Voyages
+	{% if destination is defined %}
+		{{destination.titre}}
+	{% else %}
+		Nothing
+	{% endif %}
 {% endblock %}
-{% block stylesheets %}
-	{{ parent () }}
-	<link rel="stylesheet" href="{{ asset('css/styleConnexion.css') }}" rel="stylesheet">
-{% endblock%}
-{% block mid %}		
-		<!-- === BEGIN CONTENT === -->
-            <div id="content">
-                <div class="container background-white">
-                    <div class="row margin-vert-30">
-                        <div class="col-md-12">
-                            <h2>Les Voyages</h2>
-                            <!-- End Filter Buttons -->
-                        </div>
-						
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 portfolio-group no-padding">
-							{% for destination in destinations %}
-								<!-- Portfolio Item -->
-								<div class="col-md-6 portfolio-item margin-bottom-40 code">
-									<div>
-										<a href="{{ path('voyage_destinationpage', {'pays' : destination.pays, 'title' : destination.titre }) }}">
-											<figure>
-												<img src="{{ asset('imagesg/portfolio/image') }}{{destination.id }}.jpg" alt="image{{ destination.id }}">
-												<figcaption>
-													<h3 class="margin-top-20">{{ destination.dateHist.toString() }}</h3>
-													<span>Cliquez pour réserver un voyage pour {{ destination.ville }}!</span>
-												</figcaption>
-											</figure>
-										</a>
+
+{% block mid %}
+	{% if destination is defined %}
+			<div id="content">
+				<div class="container background-white">
+					<div class="row margin-vert-30">
+						<div class="row">
+								<div class="col-md-12 portfolio-group no-padding">
+									<!-- Portfolio Item -->
+									<div class="col-md-6 portfolio-item margin-bottom-40 code">
+										<div>
+											<a href="#">
+												<figure>
+													<img src="{{ asset('images/portfolio/image') }}{{destination.id}}.jpg" alt="image{{destination.id}}">
+													<figcaption>
+														<h3 class="margin-top-20">{{destination.pays}} - {{destination.titre}} - {{ destination.dateHist.format('d') }}/{{ destination.dateHist.format('m') }}/{{ destination.dateHist.format('Y') }}</h3>
+														<span>{{destination.description}}</span>
+													</figcaption>
+												</figure>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-6 portfolio-item margin-bottom-40 code">
+										{#<form action="{{path('voyage_destinationpage', {'id': destination.id, 'verif' : 1})}}" method="post" class="signup-page">
+											<div class="signup-header">
+												<h2>Réservation</h2>
+											</div>
+											<label for="dateResa">Date</label>
+											<input class="form-control margin-bottom-20" type="date" name="dateResa" />
+											<label for="qtePers">Nombre de personne</label>
+											<input class="form-control margin-bottom-20" type="number" name="qtePers" >
+											<label for="hourResa">Heure</label>
+											<input class="form-control margin-bottom-20" type="time" name="hourResa" />
+											<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+											<hr>
+											<div class="row">
+												<div class="col-lg-4 text-right">
+													<button class="btn btn-primary" type="submit">Réserver</button>
+												</div>
+											</div>
+										</form>#}
+										{{ form_start(form) }}
+											<div class="signup-header">
+												<h2>Réservation</h2>
+											</div>
+										    {{ form_row(form.dateCom) }}
+										    {{ form_row(form.timeCom) }}
+											{{ form_row(form.qtePers) }}
+											<div class="row">
+												<div class="col-lg-4 text-right">
+													{{ form_row(form.save) }}
+												</div>
+											</div>
+										{{ form_end(form) }}
 									</div>
 								</div>
-								<!-- End Portfolio Item -->
-							{% endfor %}
+							<!-- End Portfolio Item -->
 						</div>
-                    </div>
-                </div>
-            </div>
-			
-						?>
-            <!-- === END CONTENT === -->
+					</div>
+				</div>
+			</div>
+	{% else %}
+	<div id="content">
+		<div class="container background-white">
+			<div class="row margin-vert-30">
+				<div class="col-md-12">
+					<h2>Les Voyages</h2>
+					<!-- End Filter Buttons -->
+				</div>
+				<div class="row">
+						<div class="col-md-12 portfolio-group no-padding">
+							<!-- Portfolio Item -->
+							<div class="col-md-6 portfolio-item margin-bottom-40 code">
+								<div>
+									<a href="#">
+										<figure>
+											<img src="{{ asset('images/portfolio/image') }}0.jpeg" alt="image0">
+											<figcaption>
+												<h3 class="margin-top-20">Nothing</h3>
+												<span>Nothing</span>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					<!-- End Portfolio Item -->
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endif %}
 {% endblock %}

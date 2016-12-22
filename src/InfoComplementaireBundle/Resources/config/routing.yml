@@ -4,3 +4,6 @@ info_complementaire_homepage:
 info_contact_homepage:
     path:     /contact
     defaults: { _controller: InfoComplementaireBundle:Contact:index }
+info_espace_perso_homepage:
+    path:     /espace-perso
+    defaults: { _controller: InfoComplementaireBundle:EspacePerso:index }

@@ -1,12 +1,6 @@
 voyage_homepage:
     path:     /voyages
     defaults: { _controller: ReservationBundle:Voyage:index }
-voyage_listepage:
-    path:     /voyages/liste
-    defaults: { _controller: ReservationBundle:Voyage:liste }
-voyage_payspage:
-    path:     /voyages/{pays}
-    defaults: { _controller: ReservationBundle:Voyage:pays }
 voyage_destinationpage:
-    path:     /voyages/{pays}/{title}
-    defaults: { _controller: ReservationBundle:Voyage:destination }
+    path:     /voyages/{id}
+    defaults: { _controller: ReservationBundle:Voyage:voyage }

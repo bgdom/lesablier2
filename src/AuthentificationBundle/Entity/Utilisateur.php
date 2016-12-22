@@ -13,6 +13,15 @@ use Doctrine\ORM\Mapping as ORM;
 class Utilisateur
 {
     /**
+    * @ORM\OneToMany(targetEntity="ReservationBundle\Entity\Commande", mappedBy="idUtilisateur")
+    */
+    private $commandes;
+
+    public function __construct()
+    {
+      $this->commandes= new ArrayCollection();
+    }
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -186,5 +195,38 @@ class Utilisateur
     {
         return $this->sexe;
     }
-}
 
+    /**
+     * Add commande
+     *
+     * @param \ReservationBundle\Entity\Commande $commande
+     *
+     * @return Utilisateur
+     */
+    public function addCommande(\ReservationBundle\Entity\Commande $commande)
+    {
+        $this->commandes[] = $commande;
+    
+        return $this;
+    }
+
+    /**
+     * Remove commande
+     *
+     * @param \ReservationBundle\Entity\Commande $commande
+     */
+    public function removeCommande(\ReservationBundle\Entity\Commande $commande)
+    {
+        $this->commandes->removeElement($commande);
+    }
+
+    /**
+     * Get commandes
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCommandes()
+    {
+        return $this->commandes;
+    }
+}

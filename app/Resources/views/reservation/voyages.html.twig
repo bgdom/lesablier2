@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+Voyages
+{% endblock %}
+{% block stylesheets %}
+	{{ parent () }}
+	<link rel="stylesheet" href="{{ asset('css/styleConnexion.css') }}" rel="stylesheet">
+{% endblock%}
+{% block mid %}
+    <div id="content">
+        <div class="container background-white">
+            <div class="row margin-vert-30">
+                <div class="col-md-12">
+                    <h2>Les Voyages</h2>
+                    <!-- End Filter Buttons -->
+								</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 portfolio-group no-padding">
+								{% for destination in destinations %}
+										<!-- Portfolio Item -->
+										<div class="col-md-6 portfolio-item margin-bottom-40 code">
+												<div>
+														<a href="{{ path('voyage_destinationpage', {'id' : destination.id }) }}">
+																<figure>
+																		<img src="{{ asset('images/portfolio/image') }}{{destination.id}}.jpg" alt="image{{ destination.id }}">
+																		<figcaption>
+																				<h3 class="margin-top-20">le {{ destination.dateHist.format('d') }}-{{ destination.dateHist.format('m') }}-{{ destination.dateHist.format('Y') }}</h3>
+																				<span>Cliquez pour réserver un voyage pour {{ destination.ville }}!</span>
+																		</figcaption>
+																</figure>
+														</a>
+												</div>
+										</div>
+										<!-- End Portfolio Item -->
+								{% endfor %}
+								</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

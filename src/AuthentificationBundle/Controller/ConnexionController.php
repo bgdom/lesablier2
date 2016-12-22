@@ -8,21 +8,25 @@ use AuthentificationBundle\Entity\Utilisateur;
 
 class ConnexionController extends Controller
 {
-    public function indexAction(Request $request)
-    {
-		$session = $request->getSession();
-		if(!$session->get('IdUtilisateur',false)){
-			if(null !== $request->query->get('verif') && $request->query->get('verif') == 1){
-				if($this->verifAction($request,$session))
-					return $this->redirectToRoute('authentification_homepage');
-			}
-			return $this->render('connexion/connexion.html.twig');
-		}else{
-			$this->addFlash('notice','Vous êtes déjà connecté');
-			return $this->redirectToRoute('authentification_homepage');
-		}
+    public function indexAction(Request $request) {
+  		$session = $request->getSession();
+  		if(!$session->get('IdUtilisateur',false)){
+  		    if(null !== $request->query->get('verif') && $request->query->get('verif') == 1){
+              if($this->verifAction($request,$session))
+                 $last = $session->get('last_url', null);
+                 if(null !== $last){
+                     $session->remove('last_url');
+                     return $this->redirect($last);
+                 }
+  	             return $this->redirectToRoute('authentification_homepage');
+  			  }
+          return $this->render('connexion/connexion.html.twig');
+  		}else{
+  			$this->addFlash('notice','Vous êtes déjà connecté');
+  			return $this->redirectToRoute('authentification_homepage');
+  	  }
     }
-	
+
 	private function verifAction(Request &$request, &$session)
     {
         $posts = $request->request;
@@ -41,7 +45,7 @@ class ConnexionController extends Controller
 					return true;
 				}else
 					$this->addFlash('erreur','Pas d\'utilisateurs correspondant.');
-			}else 
+			}else
 					$this->addFlash('erreur','Une erreur est survenue lors de la connexion, veuillez vérifier vos informations.');
 		}
 		return false;

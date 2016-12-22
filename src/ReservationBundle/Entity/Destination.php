@@ -14,6 +14,15 @@ use Doctrine\ORM\Mapping as ORM;
 class Destination
 {
     /**
+    * @ORM\OneToMany(targetEntity="Commande", mappedBy="idDestination")
+    */
+    private $commandes;
+
+    public function __construct()
+    {
+      $this->commandes= new ArrayCollection();
+    }
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -35,21 +44,21 @@ class Destination
      * @ORM\Column(name="Ville", type="string", length=50, unique=true)
      */
     private $ville;
-	
+
 	 /**
      * @var string
      *
      * @ORM\Column(name="Titre", type="string", length=20)
      */
     private $titre;
-	
+
 	/**
      * @var string
      *
      * @ORM\Column(name="Initial", type="string", length=5, unique=true)
      */
     private $initial;
-	
+
     /**
      * @var \Date
      *
@@ -85,7 +94,7 @@ class Destination
     public function setPays($pays)
     {
         $this->pays = $pays;
-    
+
         return $this;
     }
 
@@ -109,7 +118,7 @@ class Destination
     public function setVille($ville)
     {
         $this->ville = $ville;
-    
+
         return $this;
     }
 
@@ -133,7 +142,7 @@ class Destination
     public function setDateHist($dateHist)
     {
         $this->dateHist = $dateHist;
-    
+
         return $this;
     }
 
@@ -157,7 +166,7 @@ class Destination
     public function setDescription($description)
     {
         $this->description = $description;
-    
+
         return $this;
     }
 
@@ -181,7 +190,7 @@ class Destination
     public function setTitre($titre)
     {
         $this->titre = $titre;
-    
+
         return $this;
     }
 
@@ -193,5 +202,63 @@ class Destination
     public function getTitre()
     {
         return $this->titre;
+    }
+
+    /**
+     * Set initial
+     *
+     * @param string $initial
+     *
+     * @return Destination
+     */
+    public function setInitial($initial)
+    {
+        $this->initial = $initial;
+    
+        return $this;
+    }
+
+    /**
+     * Get initial
+     *
+     * @return string
+     */
+    public function getInitial()
+    {
+        return $this->initial;
+    }
+
+    /**
+     * Add commande
+     *
+     * @param \ReservationBundle\Entity\Commande $commande
+     *
+     * @return Destination
+     */
+    public function addCommande(\ReservationBundle\Entity\Commande $commande)
+    {
+        $this->commandes[] = $commande;
+    
+        return $this;
+    }
+
+    /**
+     * Remove commande
+     *
+     * @param \ReservationBundle\Entity\Commande $commande
+     */
+    public function removeCommande(\ReservationBundle\Entity\Commande $commande)
+    {
+        $this->commandes->removeElement($commande);
+    }
+
+    /**
+     * Get commandes
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCommandes()
+    {
+        return $this->commandes;
     }
 }
