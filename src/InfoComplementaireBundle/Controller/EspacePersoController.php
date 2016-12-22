@@ -14,12 +14,14 @@ class EspacePersoController extends Controller
             $er = $this->getDoctrine()->getRepository('AuthentificationBundle:Utilisateur');
             $erC = $this->getDoctrine()->getRepository('ReservationBundle:Commande');
             $erD = $this->getDoctrine()->getRepository('ReservationBundle:Destination');
+            $erA = $this->getDoctrine()->getRepository('ReservationBundle:Avis');
+
 
             $commandes = $erC->findBy(array(
                 'idUtilisateur' => $idUtilisateur
             ));
             $destinations = null;
-
+            $avis = null;
             foreach ($commandes as $value) {
                 $destination = $erD->findOneBy(array(
                     'id' => $value->getIdDestination()
@@ -34,12 +36,24 @@ class EspacePersoController extends Controller
                     'dateCom' => $value->getDateCom(),
                     'heureCom' => $value->getTimeCom()
                 );
+                $avi = $erA->findOneBy(array(
+                    'idUtilisateur' => $idUtilisateur,
+                    'idDestination' => $destination->getId()
+                ));
+                if($avi){
+                    $avis[] = array(
+                        'titre' => $destination->getTitre(),
+                        'dateHist' => $destination->getDateHist(),
+                        'contenu' => $avi->getContenu()
+                    );
+                }
             }
             return $this->render('InfoComplementaire\espacePerso.html.twig', array(
                 'utilisateur' => $er->findOneBy(array(
                     'id' => $idUtilisateur
                 )),
-                'destinations' => $destinations
+                'destinations' => $destinations,
+                'avis' => $avis
             ));
         }else {
             $this->addFlash('warning', 'Vous devez vous connecter');

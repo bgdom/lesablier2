@@ -22,34 +22,34 @@ class __TwigTemplate_6d9fb194809c68556d63ba5f5ce74cbc04752f72f540c675f86e525f83b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c10dce0fb4ed92ff7cc86c0995bd72064cb59838bb13608d9f4d5ae03bb35ab5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c10dce0fb4ed92ff7cc86c0995bd72064cb59838bb13608d9f4d5ae03bb35ab5->enter($__internal_c10dce0fb4ed92ff7cc86c0995bd72064cb59838bb13608d9f4d5ae03bb35ab5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "InfoComplementaire\\espacePerso.html.twig"));
+        $__internal_cb91a0725d3d5864ffab387797194997280337dc293881bc5d7085db69901954 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cb91a0725d3d5864ffab387797194997280337dc293881bc5d7085db69901954->enter($__internal_cb91a0725d3d5864ffab387797194997280337dc293881bc5d7085db69901954_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "InfoComplementaire\\espacePerso.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c10dce0fb4ed92ff7cc86c0995bd72064cb59838bb13608d9f4d5ae03bb35ab5->leave($__internal_c10dce0fb4ed92ff7cc86c0995bd72064cb59838bb13608d9f4d5ae03bb35ab5_prof);
+        $__internal_cb91a0725d3d5864ffab387797194997280337dc293881bc5d7085db69901954->leave($__internal_cb91a0725d3d5864ffab387797194997280337dc293881bc5d7085db69901954_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_51b288fbf66a6e144f635f757ff19611406a25fefe46370297d9cb85e67df786 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_51b288fbf66a6e144f635f757ff19611406a25fefe46370297d9cb85e67df786->enter($__internal_51b288fbf66a6e144f635f757ff19611406a25fefe46370297d9cb85e67df786_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_71cae37a12a4245327be656c6df1505c4221196b7f3120d383520dc0ead122d0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_71cae37a12a4245327be656c6df1505c4221196b7f3120d383520dc0ead122d0->enter($__internal_71cae37a12a4245327be656c6df1505c4221196b7f3120d383520dc0ead122d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
         echo "Espace Personnel
 ";
         
-        $__internal_51b288fbf66a6e144f635f757ff19611406a25fefe46370297d9cb85e67df786->leave($__internal_51b288fbf66a6e144f635f757ff19611406a25fefe46370297d9cb85e67df786_prof);
+        $__internal_71cae37a12a4245327be656c6df1505c4221196b7f3120d383520dc0ead122d0->leave($__internal_71cae37a12a4245327be656c6df1505c4221196b7f3120d383520dc0ead122d0_prof);
 
     }
 
     // line 7
     public function block_mid($context, array $blocks = array())
     {
-        $__internal_505dfeb0032ccdb1d6c0ee0382a89017322f8ab23d20fb84bfbdc39602c4a60f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_505dfeb0032ccdb1d6c0ee0382a89017322f8ab23d20fb84bfbdc39602c4a60f->enter($__internal_505dfeb0032ccdb1d6c0ee0382a89017322f8ab23d20fb84bfbdc39602c4a60f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
+        $__internal_fffad2452497de539a4f20b639ddd232e5dea6dbb45d83a464ac22f856b99169 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fffad2452497de539a4f20b639ddd232e5dea6dbb45d83a464ac22f856b99169->enter($__internal_fffad2452497de539a4f20b639ddd232e5dea6dbb45d83a464ac22f856b99169_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
 
         // line 8
         echo "<!-- === BEGIN CONTENT === -->
@@ -168,25 +168,55 @@ class __TwigTemplate_6d9fb194809c68556d63ba5f5ce74cbc04752f72f540c675f86e525f83b
                             <!-- End Accordion -->
                         </div>
 \t\t\t\t\t\t<h1 class=\"text-right padding-top-10 pull-right\">Mes Avis</h1>
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\tforeach(\$avis As \$avi){
-\t\t\t\t\t\t?>
-                        <!-- Main Text -->
                         <div class=\"col-md-12 login-page margin-bottom-40\">
-                            <h2 class=\"text-left\"><?php echo \$avi['Lieu'] .' - '. \$avi['DateHist'];?></h2>
-                            <p class=\"text-left\"><em><?php echo htmlspecialchars(\$avi['Contenu']); ?></em></p>
-                        </div>
-                        <!-- End Main Text -->
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\t}
-\t\t\t\t\t\t?>
+                        ";
+        // line 64
+        if ( !(null === (isset($context["avis"]) ? $context["avis"] : $this->getContext($context, "avis")))) {
+            // line 65
+            echo "    \t\t\t\t\t\t";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["avis"]) ? $context["avis"] : $this->getContext($context, "avis")));
+            foreach ($context['_seq'] as $context["_key"] => $context["avi"]) {
+                // line 66
+                echo "                                <!-- Main Text -->
+
+                                    <h2 class=\"text-left\">";
+                // line 68
+                echo twig_escape_filter($this->env, $this->getAttribute($context["avi"], "titre", array()), "html", null, true);
+                echo " - ";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["avi"], "dateHist", array()), "format", array(0 => "d"), "method"), "html", null, true);
+                echo "/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["avi"], "dateHist", array()), "format", array(0 => "m"), "method"), "html", null, true);
+                echo "/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["avi"], "dateHist", array()), "format", array(0 => "Y"), "method"), "html", null, true);
+                echo "</h2>
+                                    <p class=\"text-left\">";
+                // line 69
+                echo twig_escape_filter($this->env, $this->getAttribute($context["avi"], "contenu", array()), "html", null, true);
+                echo "</em></p>
+
+                                <!-- End Main Text -->
+    \t\t\t\t\t\t";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['avi'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 73
+            echo "                        ";
+        } else {
+            // line 74
+            echo "                            <h4><em>Aucuns</em></h4>
+                        ";
+        }
+        // line 76
+        echo "                        </div>
                     </div>
                 </div>
             </div>
             <!-- === END CONTENT === -->
 ";
         
-        $__internal_505dfeb0032ccdb1d6c0ee0382a89017322f8ab23d20fb84bfbdc39602c4a60f->leave($__internal_505dfeb0032ccdb1d6c0ee0382a89017322f8ab23d20fb84bfbdc39602c4a60f_prof);
+        $__internal_fffad2452497de539a4f20b639ddd232e5dea6dbb45d83a464ac22f856b99169->leave($__internal_fffad2452497de539a4f20b639ddd232e5dea6dbb45d83a464ac22f856b99169_prof);
 
     }
 
@@ -202,7 +232,7 @@ class __TwigTemplate_6d9fb194809c68556d63ba5f5ce74cbc04752f72f540c675f86e525f83b
 
     public function getDebugInfo()
     {
-        return array (  165 => 57,  161 => 55,  158 => 54,  134 => 46,  130 => 45,  118 => 44,  110 => 42,  104 => 38,  99 => 37,  97 => 36,  81 => 23,  77 => 22,  73 => 21,  64 => 15,  55 => 8,  49 => 7,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  212 => 76,  208 => 74,  205 => 73,  195 => 69,  185 => 68,  181 => 66,  176 => 65,  174 => 64,  165 => 57,  161 => 55,  158 => 54,  134 => 46,  130 => 45,  118 => 44,  110 => 42,  104 => 38,  99 => 37,  97 => 36,  81 => 23,  77 => 22,  73 => 21,  64 => 15,  55 => 8,  49 => 7,  41 => 4,  35 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -277,18 +307,20 @@ Espace Personnel
                             <!-- End Accordion -->
                         </div>
 \t\t\t\t\t\t<h1 class=\"text-right padding-top-10 pull-right\">Mes Avis</h1>
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\tforeach(\$avis As \$avi){
-\t\t\t\t\t\t?>
-                        <!-- Main Text -->
                         <div class=\"col-md-12 login-page margin-bottom-40\">
-                            <h2 class=\"text-left\"><?php echo \$avi['Lieu'] .' - '. \$avi['DateHist'];?></h2>
-                            <p class=\"text-left\"><em><?php echo htmlspecialchars(\$avi['Contenu']); ?></em></p>
+                        {% if not avis is null %}
+    \t\t\t\t\t\t{% for avi in avis %}
+                                <!-- Main Text -->
+
+                                    <h2 class=\"text-left\">{{avi.titre}} - {{ avi.dateHist.format('d') }}/{{ avi.dateHist.format('m') }}/{{ avi.dateHist.format('Y') }}</h2>
+                                    <p class=\"text-left\">{{avi.contenu}}</em></p>
+
+                                <!-- End Main Text -->
+    \t\t\t\t\t\t{% endfor %}
+                        {% else %}
+                            <h4><em>Aucuns</em></h4>
+                        {% endif %}
                         </div>
-                        <!-- End Main Text -->
-\t\t\t\t\t\t<?php
-\t\t\t\t\t\t}
-\t\t\t\t\t\t?>
                     </div>
                 </div>
             </div>

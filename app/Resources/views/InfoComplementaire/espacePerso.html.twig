@@ -60,18 +60,20 @@ Espace Personnel
                             <!-- End Accordion -->
                         </div>
 						<h1 class="text-right padding-top-10 pull-right">Mes Avis</h1>
-						<?php
-						foreach($avis As $avi){
-						?>
-                        <!-- Main Text -->
                         <div class="col-md-12 login-page margin-bottom-40">
-                            <h2 class="text-left"><?php echo $avi['Lieu'] .' - '. $avi['DateHist'];?></h2>
-                            <p class="text-left"><em><?php echo htmlspecialchars($avi['Contenu']); ?></em></p>
+                        {% if not avis is null %}
+    						{% for avi in avis %}
+                                <!-- Main Text -->
+
+                                    <h2 class="text-left">{{avi.titre}} - {{ avi.dateHist.format('d') }}/{{ avi.dateHist.format('m') }}/{{ avi.dateHist.format('Y') }}</h2>
+                                    <p class="text-left">{{avi.contenu}}</em></p>
+
+                                <!-- End Main Text -->
+    						{% endfor %}
+                        {% else %}
+                            <h4><em>Aucuns</em></h4>
+                        {% endif %}
                         </div>
-                        <!-- End Main Text -->
-						<?php
-						}
-						?>
                     </div>
                 </div>
             </div>
