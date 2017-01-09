@@ -21,8 +21,8 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_72302c75811fb3c9f4803990924d89888822b39165ec4032a2e4c7b35e5f8b5c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_72302c75811fb3c9f4803990924d89888822b39165ec4032a2e4c7b35e5f8b5c->enter($__internal_72302c75811fb3c9f4803990924d89888822b39165ec4032a2e4c7b35e5f8b5c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_dfc2ba59314645730e2e03ac996863a4a2746c23bdd7d09108cb76f0c4c508e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dfc2ba59314645730e2e03ac996863a4a2746c23bdd7d09108cb76f0c4c508e4->enter($__internal_dfc2ba59314645730e2e03ac996863a4a2746c23bdd7d09108cb76f0c4c508e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!-- === BEGIN HEADER === -->
@@ -69,33 +69,33 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
         // line 214
         echo "\t\t\t";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 256
+        // line 249
         echo "\t\t</div>
     </body>
 </html>
 ";
         
-        $__internal_72302c75811fb3c9f4803990924d89888822b39165ec4032a2e4c7b35e5f8b5c->leave($__internal_72302c75811fb3c9f4803990924d89888822b39165ec4032a2e4c7b35e5f8b5c_prof);
+        $__internal_dfc2ba59314645730e2e03ac996863a4a2746c23bdd7d09108cb76f0c4c508e4->leave($__internal_dfc2ba59314645730e2e03ac996863a4a2746c23bdd7d09108cb76f0c4c508e4_prof);
 
     }
 
     // line 14
     public function block_title($context, array $blocks = array())
     {
-        $__internal_6134cd48d022f6f6eb469119b8219ad5eedd4d952c65d24a48aefe026c33cac7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6134cd48d022f6f6eb469119b8219ad5eedd4d952c65d24a48aefe026c33cac7->enter($__internal_6134cd48d022f6f6eb469119b8219ad5eedd4d952c65d24a48aefe026c33cac7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_079f728291ec077d25ac52738fc0206fc9f2ed764ffff0316f10f0bb4a8a95f6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_079f728291ec077d25ac52738fc0206fc9f2ed764ffff0316f10f0bb4a8a95f6->enter($__internal_079f728291ec077d25ac52738fc0206fc9f2ed764ffff0316f10f0bb4a8a95f6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Bienvenue";
         
-        $__internal_6134cd48d022f6f6eb469119b8219ad5eedd4d952c65d24a48aefe026c33cac7->leave($__internal_6134cd48d022f6f6eb469119b8219ad5eedd4d952c65d24a48aefe026c33cac7_prof);
+        $__internal_079f728291ec077d25ac52738fc0206fc9f2ed764ffff0316f10f0bb4a8a95f6->leave($__internal_079f728291ec077d25ac52738fc0206fc9f2ed764ffff0316f10f0bb4a8a95f6_prof);
 
     }
 
     // line 15
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_b5025fe175eb9c1b47e47abbe3cf1edbca4114eac3690e60902fd857a38481f7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b5025fe175eb9c1b47e47abbe3cf1edbca4114eac3690e60902fd857a38481f7->enter($__internal_b5025fe175eb9c1b47e47abbe3cf1edbca4114eac3690e60902fd857a38481f7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_d89164ef7898519a713f5fd7d6235f885275fc5420f747d273ac4161bb4b89d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d89164ef7898519a713f5fd7d6235f885275fc5420f747d273ac4161bb4b89d8->enter($__internal_d89164ef7898519a713f5fd7d6235f885275fc5420f747d273ac4161bb4b89d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 16
         echo "\t\t\t<link rel=\"stylesheet\" href=\"";
@@ -132,15 +132,15 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
 \t\t\t<link href=\"http://fonts.googleapis.com/css?family=Roboto:400,300\" rel=\"stylesheet\" type=\"text/css\">
 \t\t";
         
-        $__internal_b5025fe175eb9c1b47e47abbe3cf1edbca4114eac3690e60902fd857a38481f7->leave($__internal_b5025fe175eb9c1b47e47abbe3cf1edbca4114eac3690e60902fd857a38481f7_prof);
+        $__internal_d89164ef7898519a713f5fd7d6235f885275fc5420f747d273ac4161bb4b89d8->leave($__internal_d89164ef7898519a713f5fd7d6235f885275fc5420f747d273ac4161bb4b89d8_prof);
 
     }
 
     // line 35
     public function block_body1($context, array $blocks = array())
     {
-        $__internal_5a7de1cd83c0dbfee462168f63c3386c070773ecbf06e6d510ade04e492c127a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5a7de1cd83c0dbfee462168f63c3386c070773ecbf06e6d510ade04e492c127a->enter($__internal_5a7de1cd83c0dbfee462168f63c3386c070773ecbf06e6d510ade04e492c127a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body1"));
+        $__internal_5812e2f32dcf4839f8d0276d74a70ee128369489deeb394fa5b326af426e9c1b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5812e2f32dcf4839f8d0276d74a70ee128369489deeb394fa5b326af426e9c1b->enter($__internal_5812e2f32dcf4839f8d0276d74a70ee128369489deeb394fa5b326af426e9c1b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body1"));
 
         // line 36
         echo "            <ul class=\"social-icons pull-right hidden-xs\">
@@ -172,7 +172,10 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
                     <div class=\"row\">
                         <!-- Logo -->
                         <div class=\"logo\">
-                            <a href=\"index.php\" title=\"Accueil\">
+                            <a href=\"";
+        // line 58
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("authentification_homepage");
+        echo "\" title=\"Accueil\">
                                 <img src=\"";
         // line 59
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/logo.png"), "html", null, true);
@@ -294,28 +297,28 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
             <!-- === BEGIN CONTENT === -->
 \t\t\t";
         
-        $__internal_5a7de1cd83c0dbfee462168f63c3386c070773ecbf06e6d510ade04e492c127a->leave($__internal_5a7de1cd83c0dbfee462168f63c3386c070773ecbf06e6d510ade04e492c127a_prof);
+        $__internal_5812e2f32dcf4839f8d0276d74a70ee128369489deeb394fa5b326af426e9c1b->leave($__internal_5812e2f32dcf4839f8d0276d74a70ee128369489deeb394fa5b326af426e9c1b_prof);
 
     }
 
     // line 126
     public function block_mid($context, array $blocks = array())
     {
-        $__internal_1eac163538e395ccad4fa9d79e72f9b41ae5cf5c3ac8c75282630ca2c22892ca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1eac163538e395ccad4fa9d79e72f9b41ae5cf5c3ac8c75282630ca2c22892ca->enter($__internal_1eac163538e395ccad4fa9d79e72f9b41ae5cf5c3ac8c75282630ca2c22892ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
+        $__internal_f3c819f7f60ab643b20f66572d3a1155d51c1005fc54a867af1f181557981463 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f3c819f7f60ab643b20f66572d3a1155d51c1005fc54a867af1f181557981463->enter($__internal_f3c819f7f60ab643b20f66572d3a1155d51c1005fc54a867af1f181557981463_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
 
         // line 127
         echo "\t\t\t";
         
-        $__internal_1eac163538e395ccad4fa9d79e72f9b41ae5cf5c3ac8c75282630ca2c22892ca->leave($__internal_1eac163538e395ccad4fa9d79e72f9b41ae5cf5c3ac8c75282630ca2c22892ca_prof);
+        $__internal_f3c819f7f60ab643b20f66572d3a1155d51c1005fc54a867af1f181557981463->leave($__internal_f3c819f7f60ab643b20f66572d3a1155d51c1005fc54a867af1f181557981463_prof);
 
     }
 
     // line 128
     public function block_body2($context, array $blocks = array())
     {
-        $__internal_08197c3f22b20a95621d0e7ebfa53067860e74f8f3575d11060ed056288a168a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_08197c3f22b20a95621d0e7ebfa53067860e74f8f3575d11060ed056288a168a->enter($__internal_08197c3f22b20a95621d0e7ebfa53067860e74f8f3575d11060ed056288a168a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body2"));
+        $__internal_984f1cf6062b83f181ac5cd3d97fa1fa00c7bebdfee18ecb2788695ecda7d231 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_984f1cf6062b83f181ac5cd3d97fa1fa00c7bebdfee18ecb2788695ecda7d231->enter($__internal_984f1cf6062b83f181ac5cd3d97fa1fa00c7bebdfee18ecb2788695ecda7d231_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body2"));
 
         // line 129
         echo "\t\t\t<!-- === END CONTENT === -->
@@ -404,15 +407,15 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
             </div>
 \t\t\t";
         
-        $__internal_08197c3f22b20a95621d0e7ebfa53067860e74f8f3575d11060ed056288a168a->leave($__internal_08197c3f22b20a95621d0e7ebfa53067860e74f8f3575d11060ed056288a168a_prof);
+        $__internal_984f1cf6062b83f181ac5cd3d97fa1fa00c7bebdfee18ecb2788695ecda7d231->leave($__internal_984f1cf6062b83f181ac5cd3d97fa1fa00c7bebdfee18ecb2788695ecda7d231_prof);
 
     }
 
     // line 214
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_b7441e49d0c95055b467bc993318ec9dd743120f5eab8e246653e5595c429a0b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b7441e49d0c95055b467bc993318ec9dd743120f5eab8e246653e5595c429a0b->enter($__internal_b7441e49d0c95055b467bc993318ec9dd743120f5eab8e246653e5595c429a0b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_dde03bf81a88a90f1f529a917e4ccbbb0802628db4e342f645d683c3fb5fa188 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dde03bf81a88a90f1f529a917e4ccbbb0802628db4e342f645d683c3fb5fa188->enter($__internal_dde03bf81a88a90f1f529a917e4ccbbb0802628db4e342f645d683c3fb5fa188_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 215
         echo "\t\t\t\t<script type=\"text/javascript\" src=\"";
@@ -426,57 +429,73 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
         // line 217
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/scripts.js"), "html", null, true);
         echo "\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"";
-        // line 219
+        // line 218
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.isotope.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"";
-        // line 221
+        // line 219
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.slicknav.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"";
-        // line 223
+        // line 220
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.visible.js"), "html", null, true);
         echo "\" charset=\"utf-8\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"";
-        // line 225
+        // line 221
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.sticky.js"), "html", null, true);
         echo "\" charset=\"utf-8\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"";
-        // line 227
+        // line 222
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/slimbox2.js"), "html", null, true);
         echo "\" charset=\"utf-8\"></script>
-
 \t\t\t\t<script src=\"";
-        // line 229
+        // line 223
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/modernizr.custom.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
-
 \t\t\t\t<script src=\"";
-        // line 231
+        // line 224
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/lobibox.min.js"), "html", null, true);
         echo "\"  type=\"text/javascript\"></script>
 \t\t\t\t<script >
 \t\t\t\t\t";
-        // line 233
+        // line 226
         if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "hasPreviousSession", array())) {
-            // line 234
+            // line 227
             echo "\t\t\t\t\t\t";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashBag", array()), "get", array(0 => "error"), "method"));
             foreach ($context['_seq'] as $context["_key"] => $context["msg_err"]) {
-                // line 235
+                // line 228
                 echo "\t\t\t\t\t\t\tLobibox.notify('error', {
+\t\t\t\t\t\t\tmsg: '";
+                // line 229
+                echo twig_escape_filter($this->env, $context["msg_err"], "html", null, true);
+                echo "'
+\t\t\t\t\t\t\t});
+\t\t\t\t\t\t";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg_err'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 232
+            echo "\t\t\t\t\t";
+        }
+        // line 233
+        echo "\t\t\t\t\t";
+        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "hasPreviousSession", array())) {
+            // line 234
+            echo "\t\t\t\t\t\t";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashBag", array()), "get", array(0 => "notice"), "method"));
+            foreach ($context['_seq'] as $context["_key"] => $context["msg_err"]) {
+                // line 235
+                echo "\t\t\t\t\t\tLobibox.notify('info', {
 \t\t\t\t\t\t\tmsg: '";
                 // line 236
                 echo twig_escape_filter($this->env, $context["msg_err"], "html", null, true);
                 echo "'
-\t\t\t\t\t\t\t});
+\t\t\t\t\t\t});
 \t\t\t\t\t\t";
             }
             $_parent = $context['_parent'];
@@ -491,10 +510,10 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
             // line 241
             echo "\t\t\t\t\t\t";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashBag", array()), "get", array(0 => "notice"), "method"));
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashBag", array()), "get", array(0 => "warning"), "method"));
             foreach ($context['_seq'] as $context["_key"] => $context["msg_err"]) {
                 // line 242
-                echo "\t\t\t\t\t\tLobibox.notify('info', {
+                echo "\t\t\t\t\t\tLobibox.notify('warning', {
 \t\t\t\t\t\t\tmsg: '";
                 // line 243
                 echo twig_escape_filter($this->env, $context["msg_err"], "html", null, true);
@@ -509,33 +528,10 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
             echo "\t\t\t\t\t";
         }
         // line 247
-        echo "\t\t\t\t\t";
-        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "hasPreviousSession", array())) {
-            // line 248
-            echo "\t\t\t\t\t\t";
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashBag", array()), "get", array(0 => "warning"), "method"));
-            foreach ($context['_seq'] as $context["_key"] => $context["msg_err"]) {
-                // line 249
-                echo "\t\t\t\t\t\tLobibox.notify('warning', {
-\t\t\t\t\t\t\tmsg: '";
-                // line 250
-                echo twig_escape_filter($this->env, $context["msg_err"], "html", null, true);
-                echo "'
-\t\t\t\t\t\t});
-\t\t\t\t\t\t";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['msg_err'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 253
-            echo "\t\t\t\t\t";
-        }
-        // line 254
         echo "\t\t\t\t</script>
 \t\t\t";
         
-        $__internal_b7441e49d0c95055b467bc993318ec9dd743120f5eab8e246653e5595c429a0b->leave($__internal_b7441e49d0c95055b467bc993318ec9dd743120f5eab8e246653e5595c429a0b_prof);
+        $__internal_dde03bf81a88a90f1f529a917e4ccbbb0802628db4e342f645d683c3fb5fa188->leave($__internal_dde03bf81a88a90f1f529a917e4ccbbb0802628db4e342f645d683c3fb5fa188_prof);
 
     }
 
@@ -551,7 +547,7 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
 
     public function getDebugInfo()
     {
-        return array (  535 => 254,  532 => 253,  523 => 250,  520 => 249,  515 => 248,  512 => 247,  509 => 246,  500 => 243,  497 => 242,  492 => 241,  489 => 240,  486 => 239,  477 => 236,  474 => 235,  469 => 234,  467 => 233,  462 => 231,  457 => 229,  452 => 227,  447 => 225,  442 => 223,  437 => 221,  432 => 219,  427 => 217,  423 => 216,  418 => 215,  412 => 214,  321 => 129,  315 => 128,  308 => 127,  302 => 126,  291 => 121,  285 => 117,  279 => 113,  277 => 112,  269 => 106,  266 => 105,  260 => 102,  257 => 101,  254 => 100,  252 => 99,  247 => 97,  241 => 94,  235 => 91,  232 => 90,  229 => 89,  223 => 86,  220 => 85,  217 => 84,  214 => 83,  207 => 79,  204 => 78,  202 => 77,  196 => 74,  178 => 59,  162 => 50,  146 => 36,  140 => 35,  127 => 23,  123 => 22,  119 => 21,  115 => 20,  111 => 19,  107 => 18,  101 => 16,  95 => 15,  83 => 14,  73 => 256,  70 => 214,  67 => 128,  64 => 126,  62 => 35,  54 => 30,  49 => 29,  47 => 15,  43 => 14,  28 => 1,);
+        return array (  531 => 247,  528 => 246,  519 => 243,  516 => 242,  511 => 241,  508 => 240,  505 => 239,  496 => 236,  493 => 235,  488 => 234,  485 => 233,  482 => 232,  473 => 229,  470 => 228,  465 => 227,  463 => 226,  458 => 224,  454 => 223,  450 => 222,  446 => 221,  442 => 220,  438 => 219,  434 => 218,  430 => 217,  426 => 216,  421 => 215,  415 => 214,  324 => 129,  318 => 128,  311 => 127,  305 => 126,  294 => 121,  288 => 117,  282 => 113,  280 => 112,  272 => 106,  269 => 105,  263 => 102,  260 => 101,  257 => 100,  255 => 99,  250 => 97,  244 => 94,  238 => 91,  235 => 90,  232 => 89,  226 => 86,  223 => 85,  220 => 84,  217 => 83,  210 => 79,  207 => 78,  205 => 77,  199 => 74,  181 => 59,  177 => 58,  162 => 50,  146 => 36,  140 => 35,  127 => 23,  123 => 22,  119 => 21,  115 => 20,  111 => 19,  107 => 18,  101 => 16,  95 => 15,  83 => 14,  73 => 249,  70 => 214,  67 => 128,  64 => 126,  62 => 35,  54 => 30,  49 => 29,  47 => 15,  43 => 14,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -621,7 +617,7 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
                     <div class=\"row\">
                         <!-- Logo -->
                         <div class=\"logo\">
-                            <a href=\"index.php\" title=\"Accueil\">
+                            <a href=\"{{path('authentification_homepage')}}\" title=\"Accueil\">
                                 <img src=\"{{ asset('images/logo.png') }}\" alt=\"Logo\" />
                             </a>
                         </div>
@@ -781,19 +777,12 @@ class __TwigTemplate_290c4d94add3f2d2802a7e260ed9b495375c8fce84381556d28b25893b8
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/jquery.min.js') }}\" type=\"text/javascript\"></script>
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/bootstrap.min.js') }}\" type=\"text/javascript\"></script>
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/scripts.js') }}\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/jquery.isotope.js') }}\" type=\"text/javascript\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/jquery.slicknav.js') }}\" type=\"text/javascript\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/jquery.visible.js') }}\" charset=\"utf-8\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/jquery.sticky.js') }}\" charset=\"utf-8\"></script>
-
 \t\t\t\t<script type=\"text/javascript\" src=\"{{ asset('js/slimbox2.js') }}\" charset=\"utf-8\"></script>
-
 \t\t\t\t<script src=\"{{ asset('js/modernizr.custom.js') }}\" type=\"text/javascript\"></script>
-
 \t\t\t\t<script src=\"{{ asset('js/lobibox.min.js') }}\"  type=\"text/javascript\"></script>
 \t\t\t\t<script >
 \t\t\t\t\t{% if app.request.hasPreviousSession %}

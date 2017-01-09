@@ -13,6 +13,7 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'mid' => array($this, 'block_mid'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -23,34 +24,34 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_bcd4945d00ff137caf348215ca73e33c9f339790a46fbbf34042f127481dc948 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bcd4945d00ff137caf348215ca73e33c9f339790a46fbbf34042f127481dc948->enter($__internal_bcd4945d00ff137caf348215ca73e33c9f339790a46fbbf34042f127481dc948_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservation/voyages.html.twig"));
+        $__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6->enter($__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservation/voyages.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_bcd4945d00ff137caf348215ca73e33c9f339790a46fbbf34042f127481dc948->leave($__internal_bcd4945d00ff137caf348215ca73e33c9f339790a46fbbf34042f127481dc948_prof);
+        $__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6->leave($__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_dd7c402157ead1d0a64963d414e18bcb0a7b0f89931317a84be43e0f40ddc7df = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dd7c402157ead1d0a64963d414e18bcb0a7b0f89931317a84be43e0f40ddc7df->enter($__internal_dd7c402157ead1d0a64963d414e18bcb0a7b0f89931317a84be43e0f40ddc7df_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0->enter($__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "Voyages
 ";
         
-        $__internal_dd7c402157ead1d0a64963d414e18bcb0a7b0f89931317a84be43e0f40ddc7df->leave($__internal_dd7c402157ead1d0a64963d414e18bcb0a7b0f89931317a84be43e0f40ddc7df_prof);
+        $__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0->leave($__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0_prof);
 
     }
 
     // line 5
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_10bb5a7b7bda07abb2b78cc3ae342222314fb5ea146e1e3c6e809b9a7ba231d2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_10bb5a7b7bda07abb2b78cc3ae342222314fb5ea146e1e3c6e809b9a7ba231d2->enter($__internal_10bb5a7b7bda07abb2b78cc3ae342222314fb5ea146e1e3c6e809b9a7ba231d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782->enter($__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 6
         echo "\t";
@@ -62,15 +63,15 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
         echo "\" rel=\"stylesheet\">
 ";
         
-        $__internal_10bb5a7b7bda07abb2b78cc3ae342222314fb5ea146e1e3c6e809b9a7ba231d2->leave($__internal_10bb5a7b7bda07abb2b78cc3ae342222314fb5ea146e1e3c6e809b9a7ba231d2_prof);
+        $__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782->leave($__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782_prof);
 
     }
 
     // line 9
     public function block_mid($context, array $blocks = array())
     {
-        $__internal_25f790a5d678909cbbec0d20cbccca10315cf82150a5911c8ce5ed7038c89223 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_25f790a5d678909cbbec0d20cbccca10315cf82150a5911c8ce5ed7038c89223->enter($__internal_25f790a5d678909cbbec0d20cbccca10315cf82150a5911c8ce5ed7038c89223_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
+        $__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28->enter($__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
 
         // line 10
         echo "    <div id=\"content\">
@@ -79,63 +80,95 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
                 <div class=\"col-md-12\">
                     <h2>Les Voyages</h2>
                     <!-- End Filter Buttons -->
-\t\t\t\t\t\t\t\t</div>
+\t\t\t\t</div>
             </div>
             <div class=\"row\">
-                <div class=\"col-md-12 portfolio-group no-padding\">
-\t\t\t\t\t\t\t\t";
-        // line 20
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["destinations"]) ? $context["destinations"] : $this->getContext($context, "destinations")));
-        foreach ($context['_seq'] as $context["_key"] => $context["destination"]) {
-            // line 21
-            echo "\t\t\t\t\t\t\t\t\t\t<!-- Portfolio Item -->
-\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 portfolio-item margin-bottom-40 code\">
-\t\t\t\t\t\t\t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 24
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("voyage_destinationpage", array("id" => $this->getAttribute($context["destination"], "id", array()))), "html", null, true);
-            echo "\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<figure>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"";
-            // line 26
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/portfolio/image"), "html", null, true);
-            echo twig_escape_filter($this->env, $this->getAttribute($context["destination"], "id", array()), "html", null, true);
-            echo ".jpg\" alt=\"image";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["destination"], "id", array()), "html", null, true);
-            echo "\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<figcaption>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"margin-top-20\">le ";
-            // line 28
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["destination"], "dateHist", array()), "format", array(0 => "d"), "method"), "html", null, true);
-            echo "-";
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["destination"], "dateHist", array()), "format", array(0 => "m"), "method"), "html", null, true);
-            echo "-";
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["destination"], "dateHist", array()), "format", array(0 => "Y"), "method"), "html", null, true);
-            echo "</h3>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Cliquez pour réserver un voyage pour ";
-            // line 29
-            echo twig_escape_filter($this->env, $this->getAttribute($context["destination"], "ville", array()), "html", null, true);
-            echo "!</span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</figcaption>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</figure>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t<!-- End Portfolio Item -->
-\t\t\t\t\t\t\t\t";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['destination'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
-        echo "\t\t\t\t\t\t\t\t</div>
+                ";
+        // line 19
+        echo twig_include($this->env, $context, "reservation/template_voyages.html.twig");
+        echo "
             </div>
+\t\t\t<div class=\"row\">
+\t\t\t\t<embed src=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("svg/map.svg"), "html", null, true);
+        echo "\" type=\"image/svg+xml\" id=\"world\" width=\"808\" height=\"430\"></embed>
+\t\t\t</div>
         </div>
     </div>
 ";
         
-        $__internal_25f790a5d678909cbbec0d20cbccca10315cf82150a5911c8ce5ed7038c89223->leave($__internal_25f790a5d678909cbbec0d20cbccca10315cf82150a5911c8ce5ed7038c89223_prof);
+        $__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28->leave($__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28_prof);
+
+    }
+
+    // line 27
+    public function block_javascripts($context, array $blocks = array())
+    {
+        $__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a->enter($__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 28
+        echo "\t";
+        $this->displayParentBlock("javascripts", $context, $blocks);
+        echo "
+\t<script type=\"text/javascript\">
+
+\t  /*
+\t\tDue to restrictions imposed by the same-origin policy, this demo
+\t\tprobably won't work when accessed using the file:// URI scheme. If
+\t\tyou're having trouble getting it to work, try accessing it over HTTP.
+\t  */
+
+\t  (function () {
+\t\t  var world = document.getElementById(\"world\");
+\t\t  world.addEventListener(\"load\", function () {
+\t\t\t \tvar doc = world.getSVGDocument();
+\t\t\t  doc.addEventListener(\"mouseover\",function(e){
+\t\t\t  var target = e.target;
+\t\t\t  var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
+\t\t\t  if (cc) {
+\t\t\t\t\ttarget.style.fill = \"green\";
+\t\t\t\t }
+
+\t\t\t\t });
+
+\t\t\t\t doc.addEventListener(\"mouseout\",function(e){
+\t\t\t\t var target = e.target;
+\t\t\t\t\t\t var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
+\t\t\t\t if (cc) {
+\t\t\t\t\ttarget.style.fill = \"white\";
+\t\t\t\t }
+
+\t\t\t\t });
+
+\t\t\t\t// Alert the ISO3166 code of clicked countries
+\t\t\t\tdoc.addEventListener(\"click\", function (e) {
+\t\t\t\t\t  var target = e.target;
+\t\t\t\t\t\t var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
+\t\t\t\t\t  if (cc) {
+\t\t\t\t\t\t   \$.post(\"";
+        // line 64
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("voyage_homepage");
+        echo "\",{
+\t\t\t\t\t\t\t   pays: cc
+\t\t\t\t\t\t   },function(data, status){
+\t\t\t\t\t\t\t   \$(\"#zoneVoyages\").replaceWith(data);
+\t\t\t\t\t\t   });
+\t\t\t\t\t  }else
+\t\t\t\t\t\talert(\"inexistant\");
+
+\t\t\t\t});
+
+\t\t  });
+\t  }());
+
+
+
+\t</script>
+";
+        
+        $__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a->leave($__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a_prof);
 
     }
 
@@ -151,7 +184,7 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 
     public function getDebugInfo()
     {
-        return array (  132 => 37,  118 => 29,  110 => 28,  102 => 26,  97 => 24,  92 => 21,  88 => 20,  76 => 10,  70 => 9,  61 => 7,  56 => 6,  50 => 5,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  152 => 64,  112 => 28,  106 => 27,  94 => 22,  88 => 19,  77 => 10,  71 => 9,  62 => 7,  57 => 6,  51 => 5,  43 => 3,  37 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -171,7 +204,7 @@ Voyages
 {% block stylesheets %}
 \t{{ parent () }}
 \t<link rel=\"stylesheet\" href=\"{{ asset('css/styleConnexion.css') }}\" rel=\"stylesheet\">
-{% endblock%}
+{% endblock %}
 {% block mid %}
     <div id=\"content\">
         <div class=\"container background-white\">
@@ -179,31 +212,70 @@ Voyages
                 <div class=\"col-md-12\">
                     <h2>Les Voyages</h2>
                     <!-- End Filter Buttons -->
-\t\t\t\t\t\t\t\t</div>
+\t\t\t\t</div>
             </div>
             <div class=\"row\">
-                <div class=\"col-md-12 portfolio-group no-padding\">
-\t\t\t\t\t\t\t\t{% for destination in destinations %}
-\t\t\t\t\t\t\t\t\t\t<!-- Portfolio Item -->
-\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-6 portfolio-item margin-bottom-40 code\">
-\t\t\t\t\t\t\t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"{{ path('voyage_destinationpage', {'id' : destination.id }) }}\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<figure>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"{{ asset('images/portfolio/image') }}{{destination.id}}.jpg\" alt=\"image{{ destination.id }}\">
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<figcaption>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"margin-top-20\">le {{ destination.dateHist.format('d') }}-{{ destination.dateHist.format('m') }}-{{ destination.dateHist.format('Y') }}</h3>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Cliquez pour réserver un voyage pour {{ destination.ville }}!</span>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</figcaption>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</figure>
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t\t\t<!-- End Portfolio Item -->
-\t\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t\t\t</div>
+                {{ include('reservation/template_voyages.html.twig') }}
             </div>
+\t\t\t<div class=\"row\">
+\t\t\t\t<embed src=\"{{asset('svg/map.svg')}}\" type=\"image/svg+xml\" id=\"world\" width=\"808\" height=\"430\"></embed>
+\t\t\t</div>
         </div>
     </div>
+{% endblock %}
+{% block javascripts %}
+\t{{parent()}}
+\t<script type=\"text/javascript\">
+
+\t  /*
+\t\tDue to restrictions imposed by the same-origin policy, this demo
+\t\tprobably won't work when accessed using the file:// URI scheme. If
+\t\tyou're having trouble getting it to work, try accessing it over HTTP.
+\t  */
+
+\t  (function () {
+\t\t  var world = document.getElementById(\"world\");
+\t\t  world.addEventListener(\"load\", function () {
+\t\t\t \tvar doc = world.getSVGDocument();
+\t\t\t  doc.addEventListener(\"mouseover\",function(e){
+\t\t\t  var target = e.target;
+\t\t\t  var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
+\t\t\t  if (cc) {
+\t\t\t\t\ttarget.style.fill = \"green\";
+\t\t\t\t }
+
+\t\t\t\t });
+
+\t\t\t\t doc.addEventListener(\"mouseout\",function(e){
+\t\t\t\t var target = e.target;
+\t\t\t\t\t\t var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
+\t\t\t\t if (cc) {
+\t\t\t\t\ttarget.style.fill = \"white\";
+\t\t\t\t }
+
+\t\t\t\t });
+
+\t\t\t\t// Alert the ISO3166 code of clicked countries
+\t\t\t\tdoc.addEventListener(\"click\", function (e) {
+\t\t\t\t\t  var target = e.target;
+\t\t\t\t\t\t var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
+\t\t\t\t\t  if (cc) {
+\t\t\t\t\t\t   \$.post(\"{{path('voyage_homepage')}}\",{
+\t\t\t\t\t\t\t   pays: cc
+\t\t\t\t\t\t   },function(data, status){
+\t\t\t\t\t\t\t   \$(\"#zoneVoyages\").replaceWith(data);
+\t\t\t\t\t\t   });
+\t\t\t\t\t  }else
+\t\t\t\t\t\talert(\"inexistant\");
+
+\t\t\t\t});
+
+\t\t  });
+\t  }());
+
+
+
+\t</script>
 {% endblock %}
 ", "reservation/voyages.html.twig", "C:\\wamp64\\www\\lesablier2\\app\\Resources\\views\\reservation\\voyages.html.twig");
     }

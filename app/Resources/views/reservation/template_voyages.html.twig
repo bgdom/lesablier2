@@ -1,0 +1,26 @@
+<div id="zoneVoyages" class="col-md-12 portfolio-group no-padding">
+    {% if destinations is null %}
+        <div class="col-md-6 portfolio-item margin-bottom-40 code">
+                    <p>Aucunes destination trouvée</p>
+        </div>
+    {% else %}
+        {% for destination in destinations %}
+                <!-- Portfolio Item -->
+                <div class="col-md-6 portfolio-item margin-bottom-40 code">
+                        <div>
+                                <a href="{{ path('voyage_destinationpage', {'id' : destination.id }) }}">
+                                    <figure>
+                                                <img src="{{ asset('images/portfolio/image') }}{{destination.id}}.jpg" alt="image{{ destination.id }}">
+                                                    <figcaption>
+                                                        <h3 class="margin-top-20">le {{ destination.dateHist.format('d') }}-{{ destination.dateHist.format('m') }}-{{ destination.dateHist.format('Y') }}</h3>
+                                                        <span>Cliquez pour réserver un voyage pour {{ destination.ville }}!</span>
+                                                </figcaption>
+                                        </figure>
+                                </a>
+                        </div>
+                    </div>
+                <!-- End Portfolio Item -->
+        {% endfor %}
+    {% endif %}
+
+</div>

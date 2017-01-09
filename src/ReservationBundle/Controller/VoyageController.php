@@ -8,22 +8,26 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use ReservationBundle\Entity\Commande;
 use ReservationBundle\Form\CommandeType;
+use Symfony\Component\HttpFoundation\Response;
 
 class VoyageController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getRepository('ReservationBundle:Destination');
-
-        return $this->render('reservation/voyages.html.twig', array('destinations' => $em->findAll()));
-    }
-
-    private function verifResa(Request &$request, &$session, &$em){
-        return false;
-    }
-
-    private function makeResa(Request &$request, &$session, &$em){
-
+        if($request->isXmlHttpRequest()){
+            $cc = $request->request->get('pays',null);
+            if($cc !== null){
+                $res = $em->findByInitial($cc);
+                /*if($res)
+                    return new Response('<div id="zoneVoyages">y\'en a</div>');
+                else
+                    return new Response('<div id="zoneVoyages">y\'en a pas</div>');*/
+                return $this->render('reservation/template_voyages.html.twig' , array('destinations' => ($res) ? $res : null));
+            }
+            return $this->render('reservation/template_voyages.html.twig' , array('destinations' => null));
+        }else
+            return $this->render('reservation/voyages.html.twig', array('destinations' => $em->findAll()));
     }
 
     public function voyageAction($id = 0, Request $request){

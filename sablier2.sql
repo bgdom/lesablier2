@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `avis`
 --
-
+ USE DATABASE
 CREATE TABLE `avis` (
   `id` int(11) NOT NULL,
   `IdDestination` int(11) NOT NULL,

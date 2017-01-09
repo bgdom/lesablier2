@@ -19,7 +19,7 @@ TABLE OF CONTENTS
 	- Testimonials
 	- Accordions
 	- Tabs
-	- Progress Bars 
+	- Progress Bars
 	- Panels
 	- Social Icons
 	- Carousel
@@ -31,6 +31,44 @@ TABLE OF CONTENTS
 /*-----------------------------------------------------------------------------------*/
 /* Basic */
 /*-----------------------------------------------------------------------------------*/
+
+#image1 {
+  object-fit: none;
+  object-position: 0 0;
+  width: 410px;
+  height: 205px;
+}
+
+#image2 {
+  object-fit: none;
+  object-position: 0 -220px;
+width: 400px;
+  height: 205px;
+}
+#image3 {
+  object-fit: none;
+  object-position: 0 -440px;
+width: 400px;
+  height: 210px;
+}
+#image4 {
+  object-fit: none;
+  object-position: 0 -670px;
+width: 400px;
+  height: 210px;
+}
+#image5 {
+  object-fit: none;
+  object-position: 0 -900px;
+width: 400px;
+  height: 210px;
+}
+#image6 {
+  object-fit: none;
+  object-position: 0 -1105px;
+width: 400px;
+  height: 210px;
+}
 html {
   overflow-y: scroll;
 }
@@ -1030,7 +1068,7 @@ h1.logo-text a {
 .slicknav_menu {
   *zoom: 1;
 }
-/* 
+/*
     User Default Style
     Change the following styles to modify the appearance of the menu.
 */
@@ -2794,3 +2832,5 @@ ul.posts-list li {
   min-height: 40px;
   text-align: center;
 }
+
+/* SPRIGHT */

@@ -22,34 +22,34 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd->enter($__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_d1f74e6fcf1e69f910683a7e3fea258f0e0f457e96232705f339c0b3b06d5ac7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d1f74e6fcf1e69f910683a7e3fea258f0e0f457e96232705f339c0b3b06d5ac7->enter($__internal_d1f74e6fcf1e69f910683a7e3fea258f0e0f457e96232705f339c0b3b06d5ac7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd->leave($__internal_6840795186193d48c625c0c1c80e6f863fd0cbe9cc93a7a13fdb21e34ef91afd_prof);
+        $__internal_d1f74e6fcf1e69f910683a7e3fea258f0e0f457e96232705f339c0b3b06d5ac7->leave($__internal_d1f74e6fcf1e69f910683a7e3fea258f0e0f457e96232705f339c0b3b06d5ac7_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080->enter($__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_fb2ff53d64320c239fff31c4645760483c03334eef31395523e8d72a6935e2dc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fb2ff53d64320c239fff31c4645760483c03334eef31395523e8d72a6935e2dc->enter($__internal_fb2ff53d64320c239fff31c4645760483c03334eef31395523e8d72a6935e2dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "Accueil
 ";
         
-        $__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080->leave($__internal_f1ae5259166194b211f4a4083ac883266b61e536f4197f5f4abbe331980dd080_prof);
+        $__internal_fb2ff53d64320c239fff31c4645760483c03334eef31395523e8d72a6935e2dc->leave($__internal_fb2ff53d64320c239fff31c4645760483c03334eef31395523e8d72a6935e2dc_prof);
 
     }
 
     // line 5
     public function block_mid($context, array $blocks = array())
     {
-        $__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e->enter($__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
+        $__internal_c0711db67684d25023e6ec7eaf916505b7c7bb5940d7071b7af42078843d8b67 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c0711db67684d25023e6ec7eaf916505b7c7bb5940d7071b7af42078843d8b67->enter($__internal_c0711db67684d25023e6ec7eaf916505b7c7bb5940d7071b7af42078843d8b67_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
 
         // line 6
         echo "    <div id=\"content\">
@@ -159,9 +159,9 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInLeft\">
-                                            <img alt=\"image1\" src=\"";
+                                            <img class=\"spright\" alt=\"image1\" id=\"image1\" src=\"";
         // line 101
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/image1.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/spright.png"), "html", null, true);
         echo "\">
                                             <figcaption>
                                                 <h3>La Pré-histoire</h3>
@@ -175,9 +175,9 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInRight\">
-                                            <img alt=\"image2\" src=\"";
+                                            <img class=\"spright\" alt=\"image2\" id=\"image2\" src=\"";
         // line 114
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/image2.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/spright.png"), "html", null, true);
         echo "\">
                                             <figcaption>
                                                 <h3>L'Egypte Antique</h3>
@@ -191,9 +191,9 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInLeft\">
-                                            <img alt=\"image3\" src=\"";
+                                            <img class=\"spright\" alt=\"image3\" id=\"image3\" src=\"";
         // line 127
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/image3.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/spright.png"), "html", null, true);
         echo "\">
                                             <figcaption>
                                                 <h3>Le Moyen-Age</h3>
@@ -207,9 +207,9 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInRight\">
-                                            <img alt=\"image4\" src=\"";
+                                            <img class=\"spright\" alt=\"image4\" id=\"image4\" src=\"";
         // line 140
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/image4.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/spright.png"), "html", null, true);
         echo "\">
                                             <figcaption>
                                                 <h3>La Renaissance</h3>
@@ -223,9 +223,9 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInLeft\">
-                                            <img alt=\"image5\" src=\"";
+                                            <img class=\"spright\" alt=\"image5\" id=\"image5\" src=\"";
         // line 153
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/image5.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/spright.png"), "html", null, true);
         echo "\">
                                             <figcaption>
                                                 <h3>Le Futur 2.0</h3>
@@ -239,9 +239,9 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInRight\">
-                                            <img alt=\"image6\" src=\"";
+                                            <img class=\"spright\" alt=\"image6\" id=\"image6\" src=\"";
         // line 166
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/image6.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/frontpage/spright.png"), "html", null, true);
         echo "\">
                                             <figcaption>
                                                 <h3>Le Futur 3.0</h3>
@@ -309,7 +309,7 @@ class __TwigTemplate_7e3198a397defac845b4d27b335766e16d2cf764a5591d94fd4c891f1f1
             </div>
 ";
         
-        $__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e->leave($__internal_208e06ccf114398682c4025ef19cca3f63370f3019541923ba1bbc5f69e4b64e_prof);
+        $__internal_c0711db67684d25023e6ec7eaf916505b7c7bb5940d7071b7af42078843d8b67->leave($__internal_c0711db67684d25023e6ec7eaf916505b7c7bb5940d7071b7af42078843d8b67_prof);
 
     }
 
@@ -438,7 +438,7 @@ Accueil
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInLeft\">
-                                            <img alt=\"image1\" src=\"{{ asset('images/frontpage/image1.jpg') }}\">
+                                            <img class=\"spright\" alt=\"image1\" id=\"image1\" src=\"{{ asset('images/frontpage/spright.png') }}\">
                                             <figcaption>
                                                 <h3>La Pré-histoire</h3>
                                                 <span>Qui n'a jamais rêvé de voir un dinosaure de ses propres yeux ? </span>
@@ -451,7 +451,7 @@ Accueil
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInRight\">
-                                            <img alt=\"image2\" src=\"{{ asset('images/frontpage/image2.jpg') }}\">
+                                            <img class=\"spright\" alt=\"image2\" id=\"image2\" src=\"{{ asset('images/frontpage/spright.png') }}\">
                                             <figcaption>
                                                 <h3>L'Egypte Antique</h3>
                                                 <span>Visitez les pyramides et rencontrez les pharaons ailleurs que dans leurs tombeaux! </span>
@@ -464,7 +464,7 @@ Accueil
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInLeft\">
-                                            <img alt=\"image3\" src=\"{{ asset('images/frontpage/image3.jpg') }}\">
+                                            <img class=\"spright\" alt=\"image3\" id=\"image3\" src=\"{{ asset('images/frontpage/spright.png') }}\">
                                             <figcaption>
                                                 <h3>Le Moyen-Age</h3>
                                                 <span>Rencontrer un roi ou une reine et devenir un chevalier est une occasion unique qu'on ne peut vivre qu'avec Le Sablier!</span>
@@ -477,7 +477,7 @@ Accueil
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInRight\">
-                                            <img alt=\"image4\" src=\"{{ asset('images/frontpage/image4.jpg') }}\">
+                                            <img class=\"spright\" alt=\"image4\" id=\"image4\" src=\"{{ asset('images/frontpage/spright.png') }}\">
                                             <figcaption>
                                                 <h3>La Renaissance</h3>
                                                 <span>Decouvrez les plus grands esprits du monde comme Leonard de Vinci ou Galilée et leurs decouvertes! </span>
@@ -490,7 +490,7 @@ Accueil
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInLeft\">
-                                            <img alt=\"image5\" src=\"{{ asset('images/frontpage/image5.jpg') }}\">
+                                            <img class=\"spright\" alt=\"image5\" id=\"image5\" src=\"{{ asset('images/frontpage/spright.png') }}\">
                                             <figcaption>
                                                 <h3>Le Futur 2.0</h3>
                                                 <span>Vous mourrez d'envie de voir l'evolution technologique sans précédent que connaitra la civilisation humaine? Allez 100 ans en avant! </span>
@@ -503,7 +503,7 @@ Accueil
                                 <li class=\"portfolio-item col-sm-6 col-xs-6 padding-20\">
 
                                         <figure class=\"animate fadeInRight\">
-                                            <img alt=\"image6\" src=\"{{ asset('images/frontpage/image6.jpg') }}\">
+                                            <img class=\"spright\" alt=\"image6\" id=\"image6\" src=\"{{ asset('images/frontpage/spright.png') }}\">
                                             <figcaption>
                                                 <h3>Le Futur 3.0</h3>
                                                 <span>Mystère mystère...</span>

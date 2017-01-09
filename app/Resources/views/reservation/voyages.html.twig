@@ -5,7 +5,7 @@ Voyages
 {% block stylesheets %}
 	{{ parent () }}
 	<link rel="stylesheet" href="{{ asset('css/styleConnexion.css') }}" rel="stylesheet">
-{% endblock%}
+{% endblock %}
 {% block mid %}
     <div id="content">
         <div class="container background-white">
@@ -13,29 +13,68 @@ Voyages
                 <div class="col-md-12">
                     <h2>Les Voyages</h2>
                     <!-- End Filter Buttons -->
-								</div>
+				</div>
             </div>
             <div class="row">
-                <div class="col-md-12 portfolio-group no-padding">
-								{% for destination in destinations %}
-										<!-- Portfolio Item -->
-										<div class="col-md-6 portfolio-item margin-bottom-40 code">
-												<div>
-														<a href="{{ path('voyage_destinationpage', {'id' : destination.id }) }}">
-																<figure>
-																		<img src="{{ asset('images/portfolio/image') }}{{destination.id}}.jpg" alt="image{{ destination.id }}">
-																		<figcaption>
-																				<h3 class="margin-top-20">le {{ destination.dateHist.format('d') }}-{{ destination.dateHist.format('m') }}-{{ destination.dateHist.format('Y') }}</h3>
-																				<span>Cliquez pour réserver un voyage pour {{ destination.ville }}!</span>
-																		</figcaption>
-																</figure>
-														</a>
-												</div>
-										</div>
-										<!-- End Portfolio Item -->
-								{% endfor %}
-								</div>
+                {{ include('reservation/template_voyages.html.twig') }}
             </div>
+			<div class="row">
+				<embed src="{{asset('svg/map.svg')}}" type="image/svg+xml" id="world" width="808" height="430"></embed>
+			</div>
         </div>
     </div>
+{% endblock %}
+{% block javascripts %}
+	{{parent()}}
+	<script type="text/javascript">
+
+	  /*
+		Due to restrictions imposed by the same-origin policy, this demo
+		probably won't work when accessed using the file:// URI scheme. If
+		you're having trouble getting it to work, try accessing it over HTTP.
+	  */
+
+	  (function () {
+		  var world = document.getElementById("world");
+		  world.addEventListener("load", function () {
+			 	var doc = world.getSVGDocument();
+			  doc.addEventListener("mouseover",function(e){
+			  var target = e.target;
+			  var cc = target.getAttribute("cc") || target.parentElement.getAttribute("cc");
+			  if (cc) {
+					target.style.fill = "green";
+				 }
+
+				 });
+
+				 doc.addEventListener("mouseout",function(e){
+				 var target = e.target;
+						 var cc = target.getAttribute("cc") || target.parentElement.getAttribute("cc");
+				 if (cc) {
+					target.style.fill = "white";
+				 }
+
+				 });
+
+				// Alert the ISO3166 code of clicked countries
+				doc.addEventListener("click", function (e) {
+					  var target = e.target;
+						 var cc = target.getAttribute("cc") || target.parentElement.getAttribute("cc");
+					  if (cc) {
+						   $.post("{{path('voyage_homepage')}}",{
+							   pays: cc
+						   },function(data, status){
+							   $("#zoneVoyages").replaceWith(data);
+						   });
+					  }else
+						alert("inexistant");
+
+				});
+
+		  });
+	  }());
+
+
+
+	</script>
 {% endblock %}
