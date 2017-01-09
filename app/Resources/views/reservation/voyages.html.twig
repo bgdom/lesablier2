@@ -15,6 +15,11 @@ Voyages
                     <!-- End Filter Buttons -->
 				</div>
             </div>
+			<div class="row">
+				<div id="chargement" class="col-md-12">
+                    <img src="{{asset('gif/loading.gif')}}" alt="chargement..."/>
+				</div>
+            </div>
             <div class="row">
                 {{ include('reservation/template_voyages.html.twig') }}
             </div>
@@ -38,6 +43,7 @@ Voyages
 		  var world = document.getElementById("world");
 		  world.addEventListener("load", function () {
 			 	var doc = world.getSVGDocument();
+				$("#chargement").hide();
 			  doc.addEventListener("mouseover",function(e){
 			  var target = e.target;
 			  var cc = target.getAttribute("cc") || target.parentElement.getAttribute("cc");
@@ -61,10 +67,14 @@ Voyages
 					  var target = e.target;
 						 var cc = target.getAttribute("cc") || target.parentElement.getAttribute("cc");
 					  if (cc) {
+						  $("#zoneVoyages").hide();
+						  $("#chargement").show();
 						   $.post("{{path('voyage_homepage')}}",{
 							   pays: cc
 						   },function(data, status){
+							   $("#chargement").hide();
 							   $("#zoneVoyages").replaceWith(data);
+							   $("#zoneVoyages").show();
 						   });
 					  }else
 						alert("inexistant");

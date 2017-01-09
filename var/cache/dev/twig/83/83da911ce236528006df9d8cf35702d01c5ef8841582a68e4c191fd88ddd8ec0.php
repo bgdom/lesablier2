@@ -24,34 +24,34 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6->enter($__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservation/voyages.html.twig"));
+        $__internal_aa9a83350d2e644e931fd5fda79fafabcace67645f01ec1cbd1deab9f27166ba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_aa9a83350d2e644e931fd5fda79fafabcace67645f01ec1cbd1deab9f27166ba->enter($__internal_aa9a83350d2e644e931fd5fda79fafabcace67645f01ec1cbd1deab9f27166ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "reservation/voyages.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6->leave($__internal_09716f45a0c6a6664d92ece0bba0ddb597ed1bdb3a871c52f3d3032aa4d8afc6_prof);
+        $__internal_aa9a83350d2e644e931fd5fda79fafabcace67645f01ec1cbd1deab9f27166ba->leave($__internal_aa9a83350d2e644e931fd5fda79fafabcace67645f01ec1cbd1deab9f27166ba_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0->enter($__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_32cf63fc723b850ddb37ae349562e818649599b44e94fe32b10d41d7828900e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_32cf63fc723b850ddb37ae349562e818649599b44e94fe32b10d41d7828900e4->enter($__internal_32cf63fc723b850ddb37ae349562e818649599b44e94fe32b10d41d7828900e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 3
         echo "Voyages
 ";
         
-        $__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0->leave($__internal_3b4cd329c8506b924c12d0f4f6940d741d2e4619cff85d935d6d4d2169aa43c0_prof);
+        $__internal_32cf63fc723b850ddb37ae349562e818649599b44e94fe32b10d41d7828900e4->leave($__internal_32cf63fc723b850ddb37ae349562e818649599b44e94fe32b10d41d7828900e4_prof);
 
     }
 
     // line 5
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782->enter($__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_8fa17bd78ce90a7b71ad6e65611b68ffb09722d7a2b90928e9feeb9cb9a6dca2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8fa17bd78ce90a7b71ad6e65611b68ffb09722d7a2b90928e9feeb9cb9a6dca2->enter($__internal_8fa17bd78ce90a7b71ad6e65611b68ffb09722d7a2b90928e9feeb9cb9a6dca2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 6
         echo "\t";
@@ -63,15 +63,15 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
         echo "\" rel=\"stylesheet\">
 ";
         
-        $__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782->leave($__internal_ee28dc1994cf1885ac1adc52d078eb0063ac2ac25afa267d63ad98449459a782_prof);
+        $__internal_8fa17bd78ce90a7b71ad6e65611b68ffb09722d7a2b90928e9feeb9cb9a6dca2->leave($__internal_8fa17bd78ce90a7b71ad6e65611b68ffb09722d7a2b90928e9feeb9cb9a6dca2_prof);
 
     }
 
     // line 9
     public function block_mid($context, array $blocks = array())
     {
-        $__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28->enter($__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
+        $__internal_ec3514da002085c44f82fbf40797ccc0ca2f2ee90e184b88035d46357559feab = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ec3514da002085c44f82fbf40797ccc0ca2f2ee90e184b88035d46357559feab->enter($__internal_ec3514da002085c44f82fbf40797ccc0ca2f2ee90e184b88035d46357559feab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mid"));
 
         // line 10
         echo "    <div id=\"content\">
@@ -82,15 +82,23 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
                     <!-- End Filter Buttons -->
 \t\t\t\t</div>
             </div>
+\t\t\t<div class=\"row\">
+\t\t\t\t<div id=\"chargement\" class=\"col-md-12\">
+                    <img src=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("gif/loading.gif"), "html", null, true);
+        echo "\" alt=\"chargement...\"/>
+\t\t\t\t</div>
+            </div>
             <div class=\"row\">
                 ";
-        // line 19
+        // line 24
         echo twig_include($this->env, $context, "reservation/template_voyages.html.twig");
         echo "
             </div>
 \t\t\t<div class=\"row\">
 \t\t\t\t<embed src=\"";
-        // line 22
+        // line 27
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("svg/map.svg"), "html", null, true);
         echo "\" type=\"image/svg+xml\" id=\"world\" width=\"808\" height=\"430\"></embed>
 \t\t\t</div>
@@ -98,17 +106,17 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
     </div>
 ";
         
-        $__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28->leave($__internal_43f2557bfadd7b6e04a98e56a43449cce57fa2684a9193ea3571bae41197ad28_prof);
+        $__internal_ec3514da002085c44f82fbf40797ccc0ca2f2ee90e184b88035d46357559feab->leave($__internal_ec3514da002085c44f82fbf40797ccc0ca2f2ee90e184b88035d46357559feab_prof);
 
     }
 
-    // line 27
+    // line 32
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a->enter($__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_52dffed0f856e455b65712921313ef9c5f0d6fb9b369ca8674f8ee5976a9a3de = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_52dffed0f856e455b65712921313ef9c5f0d6fb9b369ca8674f8ee5976a9a3de->enter($__internal_52dffed0f856e455b65712921313ef9c5f0d6fb9b369ca8674f8ee5976a9a3de_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 28
+        // line 33
         echo "\t";
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
@@ -124,6 +132,7 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 \t\t  var world = document.getElementById(\"world\");
 \t\t  world.addEventListener(\"load\", function () {
 \t\t\t \tvar doc = world.getSVGDocument();
+\t\t\t\t\$(\"#chargement\").hide();
 \t\t\t  doc.addEventListener(\"mouseover\",function(e){
 \t\t\t  var target = e.target;
 \t\t\t  var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
@@ -147,13 +156,17 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 \t\t\t\t\t  var target = e.target;
 \t\t\t\t\t\t var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
 \t\t\t\t\t  if (cc) {
+\t\t\t\t\t\t  \$(\"#zoneVoyages\").hide();
+\t\t\t\t\t\t  \$(\"#chargement\").show();
 \t\t\t\t\t\t   \$.post(\"";
-        // line 64
+        // line 72
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("voyage_homepage");
         echo "\",{
 \t\t\t\t\t\t\t   pays: cc
 \t\t\t\t\t\t   },function(data, status){
+\t\t\t\t\t\t\t   \$(\"#chargement\").hide();
 \t\t\t\t\t\t\t   \$(\"#zoneVoyages\").replaceWith(data);
+\t\t\t\t\t\t\t   \$(\"#zoneVoyages\").show();
 \t\t\t\t\t\t   });
 \t\t\t\t\t  }else
 \t\t\t\t\t\talert(\"inexistant\");
@@ -168,7 +181,7 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 \t</script>
 ";
         
-        $__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a->leave($__internal_cd2901e164f8373d5a42c93d5913b5bb039478655ad47f548fc9b6efd69abe8a_prof);
+        $__internal_52dffed0f856e455b65712921313ef9c5f0d6fb9b369ca8674f8ee5976a9a3de->leave($__internal_52dffed0f856e455b65712921313ef9c5f0d6fb9b369ca8674f8ee5976a9a3de_prof);
 
     }
 
@@ -184,7 +197,7 @@ class __TwigTemplate_a0f6e2186f173d2fc6cb2e15f4d498b5d44887097fe26f6b3f9a6bccb62
 
     public function getDebugInfo()
     {
-        return array (  152 => 64,  112 => 28,  106 => 27,  94 => 22,  88 => 19,  77 => 10,  71 => 9,  62 => 7,  57 => 6,  51 => 5,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  163 => 72,  120 => 33,  114 => 32,  102 => 27,  96 => 24,  89 => 20,  77 => 10,  71 => 9,  62 => 7,  57 => 6,  51 => 5,  43 => 3,  37 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -214,6 +227,11 @@ Voyages
                     <!-- End Filter Buttons -->
 \t\t\t\t</div>
             </div>
+\t\t\t<div class=\"row\">
+\t\t\t\t<div id=\"chargement\" class=\"col-md-12\">
+                    <img src=\"{{asset('gif/loading.gif')}}\" alt=\"chargement...\"/>
+\t\t\t\t</div>
+            </div>
             <div class=\"row\">
                 {{ include('reservation/template_voyages.html.twig') }}
             </div>
@@ -237,6 +255,7 @@ Voyages
 \t\t  var world = document.getElementById(\"world\");
 \t\t  world.addEventListener(\"load\", function () {
 \t\t\t \tvar doc = world.getSVGDocument();
+\t\t\t\t\$(\"#chargement\").hide();
 \t\t\t  doc.addEventListener(\"mouseover\",function(e){
 \t\t\t  var target = e.target;
 \t\t\t  var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
@@ -260,10 +279,14 @@ Voyages
 \t\t\t\t\t  var target = e.target;
 \t\t\t\t\t\t var cc = target.getAttribute(\"cc\") || target.parentElement.getAttribute(\"cc\");
 \t\t\t\t\t  if (cc) {
+\t\t\t\t\t\t  \$(\"#zoneVoyages\").hide();
+\t\t\t\t\t\t  \$(\"#chargement\").show();
 \t\t\t\t\t\t   \$.post(\"{{path('voyage_homepage')}}\",{
 \t\t\t\t\t\t\t   pays: cc
 \t\t\t\t\t\t   },function(data, status){
+\t\t\t\t\t\t\t   \$(\"#chargement\").hide();
 \t\t\t\t\t\t\t   \$(\"#zoneVoyages\").replaceWith(data);
+\t\t\t\t\t\t\t   \$(\"#zoneVoyages\").show();
 \t\t\t\t\t\t   });
 \t\t\t\t\t  }else
 \t\t\t\t\t\talert(\"inexistant\");
